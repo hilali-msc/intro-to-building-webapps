@@ -11,4 +11,4 @@ yo webapp
 
 You should see the following information display:
 
-![Yo webapp generator](http://shawnr.gitbooks.io/introduction-to-building-webapps/content/setup_dev_environment/img/yo-webapp-generator.jpg)
+![Yo webapp generator](img/yo-webapp-generator.png)

@@ -31,4 +31,4 @@ Second, this is a useful learning tool because you can quickly bring up projects
 This package manager allows you to more easily add and remove components from your website as you work through your development and maintenance. You can specify each version of the components you require, allowing you to maintain your site independent of when libraries or frameworks update themselves.
 
 ### Grunt
-[Grunt](http://gruntjs.com) is a build management tool and task runner.
+[Grunt](http://gruntjs.com) is a build manager  and task runner.

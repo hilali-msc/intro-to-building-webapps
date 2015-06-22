@@ -13,3 +13,4 @@ You should see the following information display:
 
 ![Yo webapp generator](img/yo-webapp-gen.png)
 
+Many Yeoman generators allow developers to select optional components and features. In this case, the generator is asking us if we want to use the [Bootstrap CSS Framework](http://getbootstrap.com), [SASS CSS](http://sass-lang.com/) Preprocessor, and [Modernizr](http://modernizr.com/), a Javascript polyfill that makes HTML5 sites work better on old browsers.

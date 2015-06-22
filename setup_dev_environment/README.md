@@ -12,3 +12,21 @@ It's good to know a little bit about what sort of developer you think you are: D
 
 ## Hosted vs. Local
 
+When setting up your development environment, you first have to choose whether you wish to work on your local machine (your laptop or desktop computer) or in a hosted environment (usually accessed through a web browser).
+
+For many years, when we wanted to edit websites we logged in to a server and made changes using command line text editors like Vi and Emacs. Once desktop Linux became popular (which coincided largely with Macs converting to OS X, which is also a Unix-based operating system), it was possible for developers to begin working "local" -- on their own computers. 
+
+Working in a "local development environment" has a number of advantages: It allows for the fastest possible response from your test server (since that server is running on the same computer you are using), and it allows you to configure every small aspect of your environment. This is the way most developers work today.
+
+The down side of local development is that it can often be complex, and, especially when working on a large project in a team setting, it can lead to wasted hours spent fixing development environments and keeping everyone running together. There are many tools and techniques that have been developed to mitigate those issues, so you may hear about things like "virtualization" and "containers" in relation to local development environments.
+
+The alternative to local development environments is the hosted development environment. These services (like [CodeAnywhere.com](http://codeanywhere.com), [Nitrous.io](http://nitrous.io), and [Cloud 9](https://c9.io/)) offer hosted development environments that you can bring up with a few clicks of the mouse. They all offer some level of interface built on top of the development environment to allow you to make easier choices when provisioning your development environment.
+
+On these systems, you typically create a "devbox" (or whatever creative term they use) with a base configuration. Those base configurations range from "HTML5" and "Python" to "Drupal" or "MEAN Stack". These configurations often have all the tools installed that we are installing during this first project.
+
+## How to Use This Book
+This book assumes you are working in a local development environment. It provides all the information you need to get various components up and running. 
+
+If you are using a hosted development environment, then you can probably bring up a "Node.js stack" or "HTML5 stack" and have access to the core components that we need here. For most of the hosted development environments, you can also run installation commands if, for example, you can bring up a Node.js devbox, but it doesn't have Yeoman and related apps installed. The instructions provided here for installing those components should also work on your hosted development environment.
+
+One area where there may be differences about how to set things up is when it comes to setting up Git and connecting your hosted development environment to your Github repository. You will likely need to consult the documentation for whatever hosted development environment provider you are using. (Almost all of them support connecting dev environments to Github.)

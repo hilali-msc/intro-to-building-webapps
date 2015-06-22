@@ -9,3 +9,12 @@
     * [Install a Generator](setup_dev_environment/install_generator.md)
     * [Create a New Repository](setup_dev_environment/create_repo.md)
     * [Bootstrap a New Project](setup_dev_environment/bootstrap_site.md)
+* Getting to Know Your CSS Framework
+* Building and Deploying Your Project
+* Web Application Frameworks Overview
+* Bootstrapping an AngularJS Application
+* Making an API Call to Fetch Data
+* Using Data in Views
+* Applying Animation and Interface Enhancements
+* Writing Tests
+* Things for the Future

@@ -19,3 +19,7 @@ We want all of those in our project, so use the `up` and `down` arrow keys to mo
 
 In some cases, you will need to answer additional questions. Whenever you use SASS, generators will often offer you the option of using a module called `node-sass` instead of the SASS Ruby Gem. Unless you have consciously installed the Ruby Gem, it's advisable to use `node-sass`, so when it asks us this question, we will say "y", we want to use `node-sass`.
 
+![Do you want to use node-sass?](img/webapp-step2.png)
+
+Press `y` and then `enter` to begin the build.
+

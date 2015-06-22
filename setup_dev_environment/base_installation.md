@@ -1,6 +1,8 @@
 #Background on Our Installation
 We will work in what is known as a "Node-based" environment. That is to say, a development environment built on the [Node.js](http://nodejs.org) platform. We will use the ["Yeoman Workflow"](http://yeoman.io) to build our apps, and that will allow us to use several popular tools for frontend development, including [Bower](http://bower.io) and [Grunt](http://gruntjs.com).
 
+We will also use [Git](http://git-scm.org) and [Github](http://github.com) to manage our code and deploy our projects.
+
 ## About Node.js
 Node.js is a development platform that runs Javascript outside of the web browser. This is noteworthy because there are not other major implementations of Javascript outside of the web browser.
 

@@ -11,4 +11,5 @@ yo webapp
 
 You should see the following information display:
 
-![Yo webapp generator](img/yo-webapp-generator.png)
+![Yo webapp generator](img/yo-webapp-gen.png)
+

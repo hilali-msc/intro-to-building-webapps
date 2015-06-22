@@ -23,3 +23,11 @@ In some cases, you will need to answer additional questions. Whenever you use SA
 
 Press `y` and then `enter` to begin the build.
 
+Now that you have built out your project skeleton, it's a good idea to run the tests and see if everything is working. To do so, run this command in your terminal:
+
+```bash
+grunt test
+```
+
+That command should yield output that looks like this at the end:
+

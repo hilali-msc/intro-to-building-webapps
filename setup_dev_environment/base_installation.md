@@ -31,4 +31,10 @@ Second, this is a useful learning tool because you can quickly bring up projects
 This package manager allows you to more easily add and remove components from your website as you work through your development and maintenance. You can specify each version of the components you require, allowing you to maintain your site independent of when libraries or frameworks update themselves.
 
 ### Grunt
-[Grunt](http://gruntjs.com) is a build manager  and task runner.
+[Grunt](http://gruntjs.com) is a build manager  and task runner tool. It provides a mechanism for developers to define tasks that can be executed. A task is usually associated with some Node module, and it includes a list of configurations that tell the module how to behave in a given context.
+
+For example, you may use Grunt to configure the `node-sass` module to process all of `.sass` or `.scss` files in your project and put the resulting `.css` files in a specific location. You might then combine that task with several others and roll it all into a command that you can execute by typing `grunt build`.
+
+We will use Grunt in our projects to manage quite a few different tasks. As we work with it, you will come to understand the power of a tool like Grunt. There are many similar tools available for other types of development environment (`rake` in Ruby, `fab` in Python, etc.).
+
+**Please Note**: You will also see another component to the Yeoman Workflow discussed: [Gulp](http://gulpjs.com/). Gulp is an alternative to Grunt that is gaining popularity. Rather than go into details about the differences between Grunt and Gulp, I'll only mention that both are very solid tools and if you wish it is entirely possible to complete this project with either tool. However, for the sake of simplicity, I am focusing on Grunt since it is the default tool that comes connected on most Yeoman generators.

@@ -40,3 +40,16 @@ For example, you may use Grunt to configure the `node-sass` module to process al
 We will use Grunt in our projects to manage quite a few different tasks. As we work with it, you will come to understand the power of a tool like Grunt. There are many similar tools available for other types of development environment (`rake` in Ruby, `fab` in Python, etc.).
 
 **Please Note**: You will also see another component to the Yeoman Workflow discussed: [Gulp](http://gulpjs.com/). Gulp is an alternative to Grunt that is gaining popularity. Rather than go into details about the differences between Grunt and Gulp, I'll only mention that both are very solid tools and if you wish it is entirely possible to complete this project with either tool. However, for the sake of simplicity, I am focusing on Grunt since it is the default tool that comes connected on most Yeoman generators.
+
+## About Git
+Git is a source control software used by many developers for web and many other types of projects. Git is open source and free, which makes it available to everyone. 
+
+Git is also "distributed", which means each person who has a copy possesses the entire history of the project, and each developer could serve as a Git server for any other developer. This allows for a great deal of flexibility when working on projects.
+
+Finally, Git is well-known for the way it handles branching and merging. Although these concepts will only be lightly addressed in the content of this book, these are important features used daily by most developers.
+
+## About Github
+Github is a hosting service with enhanced tools to handle code repositories using Git. People are often confused about Git and Github. Think of the way Flickr is a hosting service for your images. Flickr is not a camera or illustration software -- it is a tool that allows people to host their images, organize them into galleries, and connect with others who are doing the same thing. Likewise, Github is a tool that allows you to host your code, work with it using helpful tools (like issue management, or wiki pages for documentation), and then connect with other people who are doing the same thing.
+
+Github offers several services that go far beyond simple "Git repository management", and one of those features is called Github Pages. Github Pages is a static website hosting service, meaning that you can use Github to publish HTML, CSS and Javascript to the web and make it available for the general public.
+

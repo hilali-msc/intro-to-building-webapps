@@ -46,9 +46,22 @@ That command will run the server in your terminal and will open your web browser
 
 The generator has created a set of directories and files that make up a project. There are many files in the system, but here is an abbreviated description of that structure:
 
+```bash
+.git/
+.bowerrc
+.editorconfig
+.gitattributes
+.gitignore
+.jshintrc
+Gruntfile.js
+app/
+bower.json
+bower_components/
+node_modules/
+package.json
+test/
 ```
 
-```
 
 You may now open up the index file in your `app/` directory within your project (`your-project-dir/app/index.html`). All of the files that form your webapp will be contained in this `app/` directory. Underneath the `app/` directory you will find `app/styles/` and `app/scripts`. In each of those directories you will find `main.scss` and `main.js` files respectively. 
 

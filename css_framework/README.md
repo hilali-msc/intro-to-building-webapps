@@ -48,12 +48,51 @@ The other way in which preprocessors help you with hierarchy and organization is
 
 Imagine that you have a large web project and you have a stylesheet that has possibly thousands of lines of style definitions. If you look at those styles, you could probably group them according to what function they perform in your project (menus, buttons, content styles, etc.). Using your preprocessor, you can now break up those giant files into much smaller files.
 
-Imagine that you have a set of style definitions in a file called `_buttons.scss`:
+Imagine that you have a set of style definitions in a file called `_buttons.scss` in the same directory as your `main.scss` file:
 
 ```sass
 // filename: _buttons.scss
+
+.button {
+    .button-green {
+        color: green;
+    }
+}
 ```
 
+To include those styles in your `main.scss` file, you would use the `@import` command:
+
+```sass
+@import('buttons');
+```
+
+This is better than using traditional imports because the files are combined the way you want them to be before they are ever delivered to users. With traditional imports, the files are downloaded separately by the user.
+
+Most of the time, the `main.scss` file becomes an index of imports. It might look something like this:
+
+```sass
+// CSS Style Resets
+@import('reset');
+
+// Site Components
+@import('buttons');
+@import('typography');
+@import('content_styles');
+...
+```
+
+To reflect the files mentioned in the example above, your styles directory would look like this:
+
+```ssh
+styles/
+|-- _buttons.scss
+|-- _content_styles.scss
+|-- main.scss
+|-- _reset.scss
+|-- _typography.scss
+```
+
+**Please note:** The underscores preceding some of the filenames indicate that those files are "partials". This is a convention in SCSS, so you will see it often. Also notice that you do not need to include the underscore or the `.scss` filename extension in the `@import` statement.
 
 ## Variable Definition
 

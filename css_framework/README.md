@@ -149,6 +149,7 @@ These three enhancements are powerful enough to have made CSS authoring framewor
 ## Additional SASS/SCSS Learning Resources
 This book does not go in-depth on how to use SASS and SCSS to create styles. For the most part, you will apply all of the CSS knowledge that you have to your stylesheets as you normally would. But to learn more about the basic capabilities of SASS and SCSS, and for some insight about how to best leverage these tools to ease your development process.
 
+* [Official SASS Guide](http://sass-lang.com/guide)
 * [Getting Started with SASS](http://alistapart.com/article/getting-started-with-sass) by David Demaree
 * [The Beginner's Guide to SASS](http://www.webdesignerdepot.com/2013/11/the-beginners-guide-to-sass/) by Andy Leverenz
 * [On SASS and Other CSS Preprocessors](https://medium.com/@dannysmith/on-sass-and-other-css-preprocessors-24403fc80b6a) by Danny Smith

@@ -44,6 +44,10 @@ As you work with hierarchical definitions of styles, you should also keep in min
 
 It's also easy to see how styles can be better organized within a file because we can use larger element styles (`.my-container` in the example above) to contain styles affecting the child elements.
 
+The other way in which preprocessors help you with hierarchy and organization is via the `@import` command.
+
+
+
 ## Variable Definition
 
 ## Mixins (Functions)

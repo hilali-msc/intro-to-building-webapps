@@ -27,7 +27,7 @@ Here is an example to show how normal CSS might compare to the SCSS version. Fir
 
 The equivalent SCSS code to the example above looks like this:
 
-```css
+```sass
 .my-container {
     a {
         &:link, &:active, &:visited {

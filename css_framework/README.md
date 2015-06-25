@@ -12,8 +12,33 @@ Stylesheets tend to grow to huge sizes because developers want to precisely cont
 
 CSS Preprocessors help with these issues in two ways. First, when you are writing styles inside a stylesheet, you can use "SCSS" hierarchies. (**Please Note:** SCSS is a *superset* of CSS, so you can always just write "normal" CSS and that will work.)
 
-Hierarchy in style definitions might look like this:
+Here is an example to show how normal CSS might compare to the SCSS version. First, the plain CSS example:
 
+```css
+.my-container a:link,
+.my-container a:active,
+.my-container a:visited {
+    color: red;
+}
+.my-container a:hover {
+    color: green;
+}
+```
+
+The equivalent SCSS code to the example above looks like this:
+
+```css
+.my-container {
+    a {
+        &:link, &:active, &:visited {
+            color: red;
+        }
+        &:hover {
+            color: green;
+        }
+    }
+}
+```
 
 
 ## Variable Definition

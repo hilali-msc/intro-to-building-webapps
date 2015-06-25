@@ -1,2 +1,2 @@
 # Getting to Know Your CSS Preprocessor
-Over the past several years, frontend developers have embraced CSS 
+Over the past several years, frontend developers have embraced CSS Preprocessors&mdash;tools that allow you to write and manage your CSS with more functionality.

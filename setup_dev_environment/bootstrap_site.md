@@ -62,6 +62,19 @@ package.json
 test/
 ```
 
+Your website itself is located inside the `app/` directory. All of the files you will modify to make changes to your website are located in that directory. Here is what the layout of that directory and the files within looks like:
+
+```
+app/
+|-- favicon.ico
+|-- images/
+|-- index.html
+|-- robots.txt
+|-- scripts/
+    |-- main.js
+|-- styles/
+    |-- main.scss
+```
 
 You may now open up the index file in your `app/` directory within your project (`your-project-dir/app/index.html`). All of the files that form your webapp will be contained in this `app/` directory. Underneath the `app/` directory you will find `app/styles/` and `app/scripts`. In each of those directories you will find `main.scss` and `main.js` files respectively. 
 

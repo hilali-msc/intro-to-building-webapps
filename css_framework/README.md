@@ -10,7 +10,7 @@ The trickiness with specificity is that it can be tough when you are in a huge f
 
 Stylesheets tend to grow to huge sizes because developers want to precisely control how styles go together. If developers break styles into multiple files, and then link stylesheets to the webpage in the traditional manner (with a `<link>` tag), then other issues can crop up in terms of page speed and style linking order (which, of course, can cause major issues with styles rendering correctly.)
 
-
+CSS Preprocessors help with these issues in two ways. First, when you are writing styles inside a stylesheet, you can use "SCSS" hierarchies. (**Please Note:** SCSS is a *superset* of CSS, so you can always just write "normal" CSS 
 
 ## Variable Definition
 

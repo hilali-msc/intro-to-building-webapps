@@ -40,6 +40,9 @@ The equivalent SCSS code to the example above looks like this:
 }
 ```
 
+As you work with hierarchical definitions of styles, you should also keep in mind the "3-levels Rule". This is a rule of thumb that you should avoid having your styles go more than 3 levels deep in hierarchy. This will help you in two ways: First, you will have more easily readable stylesheets; second, the styles that are produced by the preprocessor will not be as efficient as shorter styles. Remember that writing styles is always a balance of being specific enough and not over-specifying. 
+
+It's also easy to see how styles can be better organized within a file because we can use larger element styles (`.my-container` in the example above) to contain styles affecting the child elements.
 
 ## Variable Definition
 

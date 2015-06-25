@@ -48,6 +48,11 @@ The other way in which preprocessors help you with hierarchy and organization is
 
 Imagine that you have a large web project and you have a stylesheet that has possibly thousands of lines of style definitions. If you look at those styles, you could probably group them according to what function they perform in your project (menus, buttons, content styles, etc.). Using your preprocessor, you can now break up those giant files into much smaller files.
 
+Imagine that you have a set of style definitions in a file called `_buttons.scss`:
+
+```sass
+// filename: _buttons.scss
+```
 
 
 ## Variable Definition

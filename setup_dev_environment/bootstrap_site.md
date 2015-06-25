@@ -64,7 +64,7 @@ test/
 
 Your website itself is located inside the `app/` directory. All of the files you will modify to make changes to your website are located in that directory. Here is what the layout of that directory and the files within looks like:
 
-```
+```ssh
 app/
 |-- favicon.ico
 |-- images/

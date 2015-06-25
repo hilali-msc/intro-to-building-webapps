@@ -46,7 +46,7 @@ That command will run the server in your terminal and will open your web browser
 
 The generator has created a set of directories and files that make up a project. There are many files in the system, but here is an abbreviated description of that structure:
 
-```blah
+```html
 .git/
 .bowerrc
 .editorconfig

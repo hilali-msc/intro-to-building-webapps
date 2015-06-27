@@ -51,3 +51,13 @@ In order to try this out, let's define some styles for the `.marketing` section 
 ```
 
 This code specifies that the `<h4>` elements inside the `.marketing` element should take on the `$brand-warning` color (which is a yellow), and the `<p>` elements inside the `.marketing` element should become the `$brand-primary` color (which is blue).
+
+The CSS that will be compiled from this SCSS will look like this:
+
+```css
+.marketing h4 { color: #f0ad4e; }
+.marketing p { color: #428bca; }
+```
+
+And the result in the browser should look like this:
+

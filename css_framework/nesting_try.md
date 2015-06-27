@@ -24,7 +24,11 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 
 This definition may not be correct. The path should point to wherever the Glyphicon font that comes with Bootstrap is located. You may not have noticed if the path is broken, but you can tell by looking at the button in the default web content. If you see a square, like this, then it is broken:
 
+![Glyphicon fonts were not found, so the icon is broken](img/font_broken.png)
 
+When the `$icon-font-path` variable is properly set, then the fonts work and the checkmark icon is visible:
+
+![Glyphicon fonts working properly](img/font_fixed.png)
 
 Adjust the `$icon-font-path` variable so it points to the directory containing the Glyphicon fonts. (You may need to add an extra `../` to point to the proper directory--or modify the path further if you have altered your default locations.)
 

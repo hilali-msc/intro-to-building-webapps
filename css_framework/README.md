@@ -7,7 +7,7 @@ There are many other doors that open and problems that are solved by trying to s
 
 For our project, we are using a CSS Preprocessor called `node-sass`, which allows us to use ["SASS"](http://sass-lang.com) (Syntactically Awesome Style Sheets). SASS, the specification, has been implemented into several different preprocessor tools (such as `node-sass` or the `sass` Ruby Gem). SASS and SCSS (Structured CSS) are terms that tend to be used interchangeably. Technically, SCSS is the piece that adds the hierarchical (nested) capabilities, while SASS is the specification that adds variables and mixin capabilities.
 
-## Variable Definition
+## Variables
 Variables are a key piece of creating flexible, consistent systems. Rather than rewriting key information several times across many files, variables allow us to create an information reference we can use everywhere. 
 
 It can be difficult to imagine how useful this will be, but here is an example. One of the most important aspects of any site design is the color palette. In normal CSS, we must define colors as words, hex codes or RGB values. Each time a color is used, we must input the same value. This can be tricky, especially when developers get lazy and use tools to select colors from web pages. Often the tool selects a slightly different shade of the color, so you may see stylesheets that reference several slightly different variations of a color. 

@@ -10,7 +10,7 @@
     * [Create a New Repository](setup_dev_environment/create_repo.md)
     * [Bootstrap a New Project](setup_dev_environment/bootstrap_site.md)
 * [Getting to Know Your CSS Preprocessor](css_framework/README.md)
-    * [todo](css_framework/nesting.md)
+    * [Nesting: Style Organization and Hierarchy](css_framework/nesting.md)
     * [todo](css_framework/variables.md)
     * [todo](css_framework/mixins.md)
     * [todo](css_framework/nesting_try.md)

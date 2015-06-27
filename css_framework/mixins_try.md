@@ -16,3 +16,21 @@ You should be able to find the Bootstrap mixins directory in your project in:
 bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/
 ```
 
+As you look through that directory, you will notice many mixins. You can use the mixins in the `_grid-framework.scss` file to easily add grid-like features to your own styles. Or the mixins in the `_gradients.scss` file to create background gradients for your own styles. Let's examine the `_border-radius.scss` file to see the four mixins designed to make it easier for you to apply custom `border-radius` styles:
+
+```sass
+@mixin border-top-radius($radius) {
+  border-top-right-radius: $radius;
+   border-top-left-radius: $radius;
+}
+```
+
+You can see the basic structure of a mixin here: The `@mixin` keyword denotes that this is a mixin definition (similar to when you use the `function` keyword in other programming languages). The name of this mixin is `border-top-radius` and it takes a value called `$radius`. That value is then used in the two lines that define the `border-radius` for the top corners of an element. Using this mixin, we could add a style definition to `_content.scss` to alter the gray jumbotron box on our web page. 
+
+Add this style to your `_content.scss` file:
+
+```sass
+.container .jumbotron {
+    @border-top-radius(0);
+}
+```

@@ -125,6 +125,8 @@ Now that we've set up our new stylesheets, let's modify `main.scss` to import th
 @import "variables";
 ```
 
+**Please Note:** It's important to remember that in order to properly override the variables in Bootstrap, you must import your `_variables.scss` file **BEFORE** you import the `bootstrap.scss` file (which is what Bower has done for you).
+
 Next, we will add an import below the Bower-managed area to include our `_content.scss` stylesheet:
 
 ```sass
@@ -151,4 +153,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 **Remember:** When importing stylesheets in SASS, you do not include the underscore (`_`) or `.scss` filename extension.
 
 Once you save this file, your server should automatically update and you should see that the text on your page is green and the button has now turned dark red:
+
+![The demo page after our style changes in main.scss](img/main_changes.png)
+
 

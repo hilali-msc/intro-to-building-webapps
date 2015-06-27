@@ -15,5 +15,28 @@ Pretty neat, right?
 
 So although these style definitions are useful (you might also pay special attention to the way they write their media query to target mobile devices), they are not necessary. You may remove any of the styles that you wish. In general, it's not recommended to put styling directly into your `main.scss` stylesheet.
 
+### Icon Font Path
+The first line of your generated stylesheet is probably a variable definition:
+
+```scss
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+```
+
+This definition may not be correct. The path should point to wherever the Glyphicon font that comes with Bootstrap is located. You may not have noticed if the path is broken, but you can tell by looking at the button in the default web content. 
+
+Adjust the `$icon-font-path` variable (You may need to add an extra `../` to point to the proper directory--or modify the path further if you have altered your default locations.)
+
+### Bower-managed area
+The next section of code in `main.scss` (starting on line 2) is the Bower-managed area. Leave these comments and import statements in place so that Bower can add components to your project properly. These lines probably look like this:
+
+```sass
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+```
+
+Don't modify the comments or the code between the comments those lines will be managed by Bower if/when we add frontend components to this project.
+
 ## Setting up your `main.scss`
 
+Your `main.scss` stylesheet should be an index of all your site's stylesheets. It should consist of a list of imports (with helpful comments about them if need be). You

@@ -7,7 +7,6 @@ Mixins are powerful tools, and you should consider them in two ways:
 
 Since we're working with Bootstrap, we have lots of mixins at our disposal. We can learn from them. We can also take existing mixins and modify functionality to create our own.
 
-## Organizing mixins
 Most of the time, we keep mixins in a separate file (or multiple files) so we don't get them lost in our stylesheets. Bootstrap stores its mixins in a `mixins/` directory containing many files.
 
 You should be able to find the Bootstrap mixins directory in your project in:
@@ -38,4 +37,38 @@ Add this style to your `_content.scss` file:
 
 In this selector, we are targeting the gray jumbotron box, and we are using the `border-radius` mixins we just looked at. The `@include` keyword is used to invoke the mixin, then the mixin signature is provided. In this case, we are setting the top radius so it will be squared off, and the bottom radius will be dramatically rounded, making the whole thing look a little bit like a boat:
 
+![A boaty-looking jumbotron](img/boat_jumbo.png)
 
+## Tips for using mixins
+
+Since mixins can be as varied as the developers creating them, you should take time to read through a mixin and understand what it is doing. Mixins can generate a lot of code, so sometimes you don't realize how much of an impact you are having when you use an unfamiliar mixin.
+
+Mixins also will each have a different set of parameters they expect. In the example above, the mixin requires us to send a measurement that will be compatible with a `border-radius` style attribute. Since CSS attributes vary so widely, it can be confusing to provide the right data when calling a mixin. This is another reason it's important to read through the code and see what's going on.
+
+Whenever you find yourself writing the same sets of style attributes in a project, consider whether or not it would be worthwhile to create a new mixin. Defining a simple output mixin can be as easy as this:
+
+```sass
+@mixin simple-output-mixin() {
+    color: $brand-primary;
+    text-decoration: underline;
+}
+```
+
+That mixin would allow me to define a style like this:
+
+```sass
+.my-content {
+    @include simple-output-mixin();
+}
+```
+
+And that would generate CSS that looks like this:
+
+```css
+.my-content {
+    color: #AA0000;
+    text-decoration: underline;
+}
+```
+
+If you can save yourself from re-typing lines of style defnitions over and over, then it is well worth the effort to create the mixin.

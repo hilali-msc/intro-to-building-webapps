@@ -45,4 +45,41 @@ Don't modify the comments or the code between the comments those lines will be m
 
 ## Setting up your `main.scss`
 
-Your `main.scss` stylesheet should be an index of all your site's stylesheets. It should consist of a list of imports (with helpful comments about them if need be). You
+Your `main.scss` stylesheet should be an index of all your site's stylesheets. It should consist of a list of imports (with helpful comments about them if need be). You should strive for a clear, understandable structure. There are different philosophies about how to manage your styles and stylesheets, but they all generally boil down to managing two things:
+
+1.  Making sure styles are named and organized in a way that makes sense. Styles that affect the same objects should go together. Styles that belong to the same part or feature of the site should go together. As much as possible, we wish to avoid making any surprises or confusion for other developers who may come along.
+2.  Making sure individual stylesheets do not become overly cumbersome because they are way too long.
+
+### Organizing files
+
+Some sites might organize styles by specific function, something like this:
+
+```bash
+/app/styles/
+|-- main.scss
+|-- _buttons.scss
+|-- _content.scss
+|-- _layouts.scss
+|-- _typography.scss
+...
+```
+
+This approach works fine, especially when there aren't too many styles. Once a site grows very large, it may be beneficial to break up styles into other types of organization:
+
+```bash
+/app/styles/
+|-- main.scss
+|-- components/
+    |-- _buttons.scss
+    |-- _menus.scss
+    ...
+|-- modules/
+    |-- _blog.scss
+    |-- _checkout.scss
+    ...
+|-- _reset.scss
+```
+
+There are more formal methods of organizing styles (such as [SMACCS](https://smacss.com/)), and there are many, many hybrid and ad-hoc methods as well. It's worthwhile to spend a little time thinking about what makes sense in terms of organizaing your files.
+
+### Setting up our imports

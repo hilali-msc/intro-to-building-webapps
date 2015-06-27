@@ -105,7 +105,7 @@ Now you need to create `app/styles/_variables.scss`. To make this file, we're go
 Find the Bootstrap variables file. It should be in:
 
 ```bash
-bower_components/bootstrap-sass-official/stylesheets/bootstrap/_variables.scss
+bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
 ```
 (Note: The `bower_components` directory should be at the root of your project.)
 

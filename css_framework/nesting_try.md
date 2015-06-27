@@ -100,6 +100,55 @@ body {
 }
 ```
 
+Now you need to create `app/styles/_variables.scss`. To make this file, we're going to copy a file out of the Bootstrap files that Bower installed for us. In order to customize Bootstrap, a `_variables.scss` file is provided. This file sets values that we can alter or override to make Bootstrap fit our needs better. However, we **DO NOT** want to edit the `_variables.scss` file in the Bootstap module. We **must** make our own copy of `_variables.scss` in our `app/styles/` directory.
 
+Find the Bootstrap variables file. It should be in:
+
+```bash
+bower_components/bootstrap-sass-official/stylesheets/bootstrap/_variables.scss
+```
+(Note: The `bower_components` directory should be at the root of your project.)
+
+Copy this file into your `app/styles/` directory. Once you have done so, open the file for editing. Find the line that defines `$brand-success` (probably line 22), and alter it like so:
+
+```sass
+$brand-success: #AA0000;
+```
+
+This turns the color for "success" styles in our project a dark red. Once we get these stylesheets connected to `main.scss`, you will see that the body text turns green and the button turns red.
 
 ### Setting up our imports
+
+Now that we've set up our new stylesheets, let's modify `main.scss` to import those files. We will first add a line above the Bower-managed area that imports the `_variables.scss` file:
+
+```sass
+@import "variables";
+```
+
+Next, we will add an import below the Bower-managed area to include our `_content.scss` stylesheet:
+
+```sass
+@import "content";
+```
+
+Once we're finished, and with some helpful comments added, our `main.scss` stylesheet should look like this:
+
+```sass
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+// Override Bootstrap variables
+@import "variables";
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// Site-specific styles
+// Add additional stylesheets below
+@import "content";
+```
+
+**Remember:** When importing stylesheets in SASS, you do not include the underscore (`_`) or `.scss` filename extension.
+
+Once you save this file, your server should automatically update and you should see that the text on your page is green and the button has now turned dark red:
+

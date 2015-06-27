@@ -82,4 +82,24 @@ This approach works fine, especially when there aren't too many styles. Once a s
 
 There are more formal methods of organizing styles (such as [SMACCS](https://smacss.com/)), and there are many, many hybrid and ad-hoc methods as well. It's worthwhile to spend a little time thinking about what makes sense in terms of organizaing your files.
 
+### Make some stylesheets
+
+Since we are just experimenting and we don't need too much in terms of styles, we will do a minimal stylesheet setup. We will create the following file structure for our `app/styles/` directory:
+
+```bash
+/app/styles/
+|-- main.scss
+|-- _content.scss
+|-- _variables.scss
+```
+Create the `app/styles/_content.scss` file and add the following style definition so we will know when our new stylesheets have taken effect:
+
+```sass
+body {
+    color: green;
+}
+```
+
+
+
 ### Setting up our imports

@@ -13,11 +13,11 @@
     * [Nesting: Style Organization and Hierarchy](css_framework/nesting.md)
     * [SASS Variables](css_framework/variables.md)
     * [Mixins](css_framework/mixins.md)
-    * [Organizing Your Stylesheets](css_framework/nesting_try.md)
+    * [Imports: Setup Your Stylesheets](css_framework/nesting_try.md)
     * [todo](css_framework/nesting_try2.md)
-    * [todo](css_framework/variables_try.md)
-    * [todo](css_framework/mixins_try.md)
-    * [todo](css_framework/finishing_css.md)
+    * [Customizing Variables](css_framework/variables_try.md)
+    * [Making the Most of Mixins](css_framework/mixins_try.md)
+    * [Finishing Your SASS Experimentation](css_framework/finishing_css.md)
 * Building and Deploying Your Project
 * Web Application Frameworks Overview
 * Bootstrapping an AngularJS Application

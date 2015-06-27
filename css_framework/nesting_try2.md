@@ -61,3 +61,4 @@ The CSS that will be compiled from this SCSS will look like this:
 
 And the result in the browser should look like this:
 
+![Text colors in the marketing area](img/marketing_changes.png)

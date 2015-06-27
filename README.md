@@ -11,7 +11,7 @@ This book takes up the philosophy that underneath it all these tools and framewo
 This is the goal of a project-based approach: Readers should be able to reap immediate rewards from the instructions contained here, but they will also be led to deeper topics they can explore at length in the future.
 
 ## What is in this book?
-Throughout the ten projects in this book, we will build a webapp using modern frontend development tools. We will use the [Yeoman](http://yeoman.io) workflow to provide our project bootstrapping, package management, build and deployment capabilities. This involves working with [Grunt](http://gruntjs.com) and [Bower](http://bower.io), and of course all of it runs on [Node.js](http://nodejs.org). These are solid tools used by many developers.
+Throughout the series of projects in this book, we will build a webapp using modern frontend development tools. We will use the [Yeoman](http://yeoman.io) workflow to provide our project bootstrapping, package management, build and deployment capabilities. This involves working with [Grunt](http://gruntjs.com) and [Bower](http://bower.io), and of course all of it runs on [Node.js](http://nodejs.org). These are solid tools used by many developers.
 
 Once we are up and running, we will walk through a buildout of a simple application using [AngularJS](http://angularjs.org) and a third party data API that can provide us useful information to share with our users.
 

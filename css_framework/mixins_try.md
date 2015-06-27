@@ -31,6 +31,11 @@ Add this style to your `_content.scss` file:
 
 ```sass
 .container .jumbotron {
-    @border-top-radius(0);
+    @include border-top-radius(0px);
+    @include border-bottom-radius(50px);
 }
 ```
+
+In this selector, we are targeting the gray jumbotron box, and we are using the `border-radius` mixins we just looked at. The `@include` keyword is used to invoke the mixin, then the mixin signature is provided. In this case, we are setting the top radius so it will be squared off, and the bottom radius will be dramatically rounded, making the whole thing look a little bit like a boat:
+
+

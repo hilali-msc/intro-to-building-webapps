@@ -117,7 +117,7 @@ $brand-success: #AA0000;
 
 This turns the color for "success" styles in our project a dark red. Once we get these stylesheets connected to `main.scss`, you will see that the body text turns green and the button turns red.
 
-### Setting up our imports
+### Setting up your imports
 
 Now that we've set up our new stylesheets, let's modify `main.scss` to import those files. We will first add a line above the Bower-managed area that imports the `_variables.scss` file:
 

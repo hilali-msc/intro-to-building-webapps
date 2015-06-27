@@ -7,10 +7,8 @@ There are many other doors that open and problems that are solved by trying to s
 
 For our project, we are using a CSS Preprocessor called `node-sass`, which allows us to use ["SASS"](http://sass-lang.com) (Syntactically Awesome Style Sheets). SASS, the specification, has been implemented into several different preprocessor tools (such as `node-sass` or the `sass` Ruby Gem). SASS and SCSS (Structured CSS) are terms that tend to be used interchangeably. Technically, SCSS is the piece that adds the hierarchical (nested) capabilities, while SASS is the specification that adds imports, variables and mixin capabilities.
 
-
-
 ## Additional SASS/SCSS Learning Resources
-This book does not go in-depth on how to use SASS and SCSS to create styles. For the most part, you will apply all of the CSS knowledge that you have to your stylesheets as you normally would. But to learn more about the basic capabilities of SASS and SCSS, and for some insight about how to best leverage these tools to ease your development process.
+This book does not go in-depth on how to use SASS and SCSS to create styles. For the most part, you will apply all of the CSS knowledge that you have to your stylesheets as you normally would. But as you work through the tasks prescribed here, you may want to check out these resources for additional guidance and insight:
 
 * [Official SASS Guide](http://sass-lang.com/guide)
 * [Getting Started with SASS](http://alistapart.com/article/getting-started-with-sass) by David Demaree

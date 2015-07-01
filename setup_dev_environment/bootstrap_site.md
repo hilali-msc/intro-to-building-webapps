@@ -116,7 +116,7 @@ Then you will need to add changed files. You can add them one file at a time, or
 
 That command stages your changes, making them ready to be committed. Now we must make the commit, which sets these changes into the history of our repository:
 
-`git commit -m <YOUR MESSAGE HERE>`
+`git commit -m "YOUR MESSAGE HERE"`
 
 Finally, you must push your changes to Github. Since you cloned from Github, that server will be known as the `origin`. When you push it will automatically send your changes back to the `origin`.
 

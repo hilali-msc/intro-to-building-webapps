@@ -158,4 +158,10 @@ Be sure to remove all of the marker lines so they don't linger in your file and 
 
 **Please Note:** There can be more than one location in a file where there is a merge conflict. It is a good idea to use the "find" feature of your text editor to find sequences of "<<<" or ">>>" to make sure you cleaned up all those conflict markers.
 
-## Useful tips for configuring Git
+## Additional Resources
+There are many wonderful resources for learning Git. You may wish to check out some of these:
+
+* [Git SCM Book](https://git-scm.com/book/en/v1/Git-Basics)
+* [Git Ready](http://gitready.com/)
+* [Git and Github Learning Resources](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+* [Github and Code School Course](https://try.github.io/levels/1/challenges/1)

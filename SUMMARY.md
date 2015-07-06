@@ -19,7 +19,12 @@
     * [Customizing Variables](css_framework/variables_try.md)
     * [Making the Most of Mixins](css_framework/mixins_try.md)
     * [Finishing Your SASS Experimentation](css_framework/finishing_css.md)
-* Building and Deploying Your Project
+* [Building and Deploying Your Project](building_projects/README.md)
+    * [Install `grunt-build-control`](building_projects/install_buildcontrol.md)
+    * [Anatomy of `Gruntfile.js`](building_projects/gruntfile_anatomy.md)
+    * [Configuring `grunt-build-control`](building_projects/configuring_buildcontrol.md)
+    * [Using the `buildcontrol` task](building_projects/using_buildcontrol.md)
+    * [Après Deployment](building_projects/deployment_conclusion.md)
 * Web Application Frameworks Overview
 * Bootstrapping an AngularJS Application
 * Making an API Call to Fetch Data

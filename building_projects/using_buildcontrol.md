@@ -38,3 +38,9 @@ buildcontrol:pages  5.9s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
 Total 7s
 ```
 
+Once you're done, you should return to the Github page for your repository. You should see the new `gh-pages` branch has been created by `grunt-build-control`. If you click into the "settings" page for your repository, you should see that your site built successfully on Github Pages:
+
+![Settings page for your repository](img/ghpages-settings.png)
+
+If there is an issue with deploying your site, then Github will alert you in that box. Usually if there is an issue with deploying your site you can fix it by making a small modification and re-deploying.
+

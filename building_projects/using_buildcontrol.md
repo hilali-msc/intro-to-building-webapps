@@ -44,3 +44,5 @@ Once you're done, you should return to the Github page for your repository. You 
 
 If there is an issue with deploying your site, then Github will alert you in that box. Usually if there is an issue with deploying your site you can fix it by making a small modification and re-deploying.
 
+If you see the green bar, you should click the URL and visit your newly deployed website!
+

@@ -27,3 +27,6 @@
 * Applying Animation and Interface Enhancements
 * Writing Tests
 * Things for the Future
+* [Appendix](appendix/README.md)
+    * [Git Reference](appendix/git_reference.md)
+    * [Links and Resources](appendix/links.md)

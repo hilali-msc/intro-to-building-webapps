@@ -50,7 +50,6 @@ Committing is only half the battle when it comes to sharing your work with other
 ```git push origin```
 
 
-
 ## Branching and Merging
 
 ## Useful Tips for Configuring Git

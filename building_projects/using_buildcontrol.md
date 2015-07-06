@@ -21,3 +21,20 @@ Now you are ready to deploy. Run the `buildcontrol` task to deploy:
 ```
 grunt buildcontrol
 ```
+
+That command will kick off the deployment process. You will see some information scroll down the screen, and it should all end up with a message that looks something like this:
+
+```bash
+Pushing gh-pages to git@github.com:shawnr/wats2000-dev1.git
+To git@github.com:shawnr/wats2000-dev1.git
+ * [new branch]      gh-pages -> gh-pages
+
+Done, without errors.
+
+
+Execution Time (2015-07-06 22:14:58 UTC)
+loading tasks       1.1s  ▇▇▇▇▇▇▇▇ 16%
+buildcontrol:pages  5.9s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 84%
+Total 7s
+```
+

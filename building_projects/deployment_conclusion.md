@@ -33,3 +33,6 @@ More happens when we build the site, too. Tests are run. If they fail, it will c
 Grunt is also looking at all of our images and trying to optimize those. Right now we are not using any images, but if we did then they would be optimized and compressed as much as possible before deployment. This is a good thing for our users.
 
 There are many other things that Grunt can do for us as part of the build and deployment process. As you encounter challenges in your development, keep in mind the things Grunt can do for you and on the lookout for opportunities to get more out of a tool you're already using.
+
+## Congratulations!
+We have now completed the prep work for our webapp project. In the next chapter we will bootstrap our first AngularJS application, and it will use all the pieces we have prototyped here.

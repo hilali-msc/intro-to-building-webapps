@@ -12,7 +12,9 @@ All HTML, CSS and Javascript is "minified" when we deploy. This means that extra
 
 Here is an example of what HTML looks like after it has been minified:
 
+![Minified HTML](img/minified-html.png)
 
+If you use the "Inspect Element" tool in your browser, then you will still see the HTML broken into a nice visual display, but that's because the developer tools are able to reformat the HTML. When you view source, you will see the compressed HTML like you see above.
 
 ## More
 More happens when we build the site, too. Tests are run. If they fail, it will cause us issues. Fortunately, we have no tests written, so that cannot prevent us from deploying. But when we get around to adding tests to our project, that will be a great way to help us not make a mistake by deploying broken code.

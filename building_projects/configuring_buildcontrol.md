@@ -27,7 +27,7 @@ This should looks something like this:
           remote: 'git@github.com:your_github_user/your_webapp.git',
           branch: 'gh-pages'
         }
-      },
+      }
     },
 
     // Watches files for changes and runs tasks based on the changed files

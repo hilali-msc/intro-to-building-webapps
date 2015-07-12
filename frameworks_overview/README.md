@@ -31,4 +31,11 @@ As PHP boomed, so did other languages online. Python and Ruby both saw a serious
 
 Ruby's most popular web application framework is Rails, popularized by a group of bombastic creators and enthusiastic supporters. Rails was the first popular framework to boast robust database integration so that developers did not have to hand code SQL in order to make their apps run. This made Rails immensely friendly to developers who wish to rapidly create content types and use them in innovative ways.
 
-The approaches pioneered in the mid-2000s have continued to grow and evolve. Although Django and Rails are both dominant frameworks today, there are numerous alternative frameworks (such as Flask or Sinatra) that aim to serve various types of websites within various types of contexts.
+The approaches pioneered in the mid-2000s have continued to grow and evolve. Although Django and Rails are both dominant frameworks today, there are numerous alternative frameworks (such as Flask and Sinatra) that aim to serve various types of websites within various types of contexts. 
+
+Although the BEST way to build a webapp is far from settled, one thing we appear to have learned over the years is that if you're going to build webapps, you will likely benefit from using a framework.
+
+## What about Javascript?
+You may have noticed that all of the discussion so far has focused on backend languages. That's because the story of Javascript frameworks is both shorter and longer than the summary given above. Although serious usage of Javascript frameworks has not been at the foreground of web development for as long, over the past five years Javascript has become an even more important component of building websites. 
+
+Javascript is everywhere, and developers are using it in amazing new ways every day. 

@@ -24,4 +24,10 @@ phonecatApp.config(['$routeProvider',
 
 In this example, we can see that two different views are being configured: One view exists at `/phones` and will show a list of all phones in the system, controlled by the `PhoneListCtrl` controller. The other view exists at `/phones/:phoneId` and will show the information for just one phone model using the `PhoneDetailCtrl` controller. The `otherwise` clause tells the webapp that if the URL patterns do not match either of the two defined views, then route the user to the `/phones` view (the list of all the phones).
 
+Note that each `route` defines three details:
+
+1. The route pattern ("/phones") that can be matched in the URL.
+2. The `templateUrl` attribute, which defines which template will be rendered.
+3. The `controller`, which defines which controller will be invoked.
+
 This kind of routes definition would allow us to share links to specific phones, make bookmarks to specific phones, and would otherwise allow us to use this webapp like we expect.

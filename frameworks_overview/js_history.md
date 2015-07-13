@@ -44,7 +44,7 @@ jQuery has been a great solution for making dynamic web pages in many ways:
 * It has a "plugin" system that allows developers to create custom functionality and complex modules to make specific effects happen, and those plugins can be leveraged in a fairly standardized way.
 
 ## The challenge of progressive enhancement
-The generation of Javascript libraries that birthed tools like jQuery was an era built around "progressive enhancement" (and, sometimes, progressive enhancement's less appealing cousin, "graceful degradation"). Developers could not be sure that all users would have browsers supporting Javascript, and if they did standards adoption among browser makers could be spotty, so the Javascript might not work. Because of this, developers had to always guard against breakage.
+The generation of Javascript libraries that birthed tools like jQuery in the mid-2000s was an era built around "progressive enhancement" (and, sometimes, progressive enhancement's less appealing cousin, "graceful degradation"). Developers could not be sure that all users would have browsers supporting Javascript, and if they did standards adoption among browser makers could be spotty, so the Javascript might not work. Because of this, developers had to always guard against breakage.
 
 To help with this, tools like jQuery were made to enhance the vanilla HTML and CSS that would normally be delivered to the page. Properly done, pages could be created that were totally usable in a traditional, "click and refresh", way if the Javascript failed to load. But if the Javascript succeeded at loading, then pages would come alive with background updates, fancy interfaces, and more.
 

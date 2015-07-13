@@ -3,13 +3,17 @@ There are many Single Page Application Frameworks (SPAFs) available for building
 
 What follows is a short list of some of the popular SPAFs that are not AngularJS. This book will use AngularJS as the primary example framework, so we will cover it on consecutive pages. For now, let's survey the landscape.
 
-## Backbone
+## [Backbone.js](http://backbonejs.org/)
 Backbone was one of the first Javascript-based SPAFs to come out. It tends to be farily "unopinionated", which means that it does not make many requirements about how you organize your code. Backbone is still a very popular tool, and there are many supporting libraries and modules that can enhance Backbone apps (such as Marionette and Thorax).
 
-Backbone is a small framework, and many developers like that. If you're the kind of developer who likes to read all the source of the tools you're using, then Backbone makes that easy. For more experienced Javsacript developers, Backbone can be a great blend of enough structure to keep you sane, but not so much that you feel fenced in. For less experienced developers, Backbone will give you plenty enough rope to hang yourself, so follow guides and best practices.
+## [Ember](http://emberjs.com/)
+Ember is a framework designed to speed development and remove mundane boilerplate code from your list of TODOs. It provides you with a more opinionated setup, meaning that it uses standard approaches to things and assumes you want to do that, too. It is built around some popular templating libraries, and boasts a full set of included features.
 
-## Ember
+## [React](https://facebook.github.io/react/) + [Flux](https://facebook.github.io/flux/)
+React provides a tool for making interactive Javascript components for your webapp that keep track of their state and their data. Flux is an application framework used by Facebook to build their webapps. Flux makes use of React to create highly interactive and responsive interfaces.
 
-## React
+## [Meteor](https://www.meteor.com/)
+Meteor is both a client and server-side solution for building webapps using pure Javascript. The server is designed to integrate closely with your webapp so you can quickly build custom APIs to interface with your data stores and then use them in your webapp. 
 
-## Meteor
+## [TODO MVC Comparison](http://todomvc.com/)
+These are just a few of the popular Javascript SPAFs that are in use today. You can find many more, along with a sample project to compare across SPAFs on the TODO MVC website. This site shows the implementation of the same TODO webapp in many different SPAFs. You can compare how the code looks in each one and get a great idea of the differences between frameworks.

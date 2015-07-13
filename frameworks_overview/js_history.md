@@ -16,3 +16,43 @@ Of the three primary web technologies that make a page live and breathe in your 
 Because Javascript is the only programming language that is interpreted and executed in the web browser, it enjoys a special place in the world of web development. This is why Javascript is so important.
 
 ## Early Javascript
+Javascript was created by Brendan Eich at Netscape and was introduced in 1995 through the Netscape browser. Microsoft adopted Javascript in 1996 with Internet Explorer 3, and since then Javascript has been a part of the web. 
+
+In 1997 Ecma International, a standards organization based in Europe, released the first ECMAScript standard, lending Javascript governance outside of a single company. ECMAScript standards have been released steadily ever since, with the latest being ECMAScript v. 6, which released in June 2015.
+
+At first, Javascript was used for very basic features, many of which have since become absorbed into other technologies. For example, at one point it was common to use Javascript to handle "image rollovers"&mdash;making images switch when the user moved the mouse cursor over them. Using this technique brought about a revolution in web design with sites that had more graphic navigation bars that could highlight current and active menu options.
+
+Javascript had the ability to modify elements in the DOM, but the native APIs for working with the DOM were clunky and limited. In the early 2000s Javascript developers created libraries, which grew into frameworks, to make manipulating the DOM much easier. Numerous libraries competed, including MooTools, Dojo, and ExtJS, but the library that became a framework that ruled Javascript development for many years was jQuery.
+
+jQuery introduced the `$()` (often pronounced "dollar sign query"), which was a shorthand way of referencing the main `jquery` object. The "query" part of jQuery came from the fact that developers could use CSS notation to select DOM elements, allowing them to "query" the DOM for the elements they want.
+
+With jQuery, one may write:
+
+```js
+$('nav a').on("click", function(el){ 
+    el.addClass('demo');
+});
+```
+
+That code would add a "click" listener to all of the links that are inside the `<nav>` element. To do the same thing with native APIs would take many more lines of complex code.
+
+jQuery has been a great solution for making dynamic web pages in many ways: 
+
+* It provides a great set of tools for developers.
+* It generally plays nicely with unrelated Javascript, so you can use it alongside lots of other tools.
+* It has good support for making "AJAX" (asynchronous Javascript) requests.
+* It has a "plugin" system that allows developers to create custom functionality and complex modules to make specific effects happen, and those plugins can be leveraged in a fairly standardized way.
+
+## The challenge of progressive enhancement
+The generation of Javascript libraries that birthed tools like jQuery was an era built around "progressive enhancement" (and, sometimes, progressive enhancement's less appealing cousin, "graceful degradation"). Developers could not be sure that all users would have browsers supporting Javascript, and if they did standards adoption among browser makers could be spotty, so the Javascript might not work. Because of this, developers had to always guard against breakage.
+
+To help with this, tools like jQuery were made to enhance the vanilla HTML and CSS that would normally be delivered to the page. Properly done, pages could be created that were totally usable in a traditional, "click and refresh", way if the Javascript failed to load. But if the Javascript succeeded at loading, then pages would come alive with background updates, fancy interfaces, and more.
+
+This approach is still worthwhile, and for many purposes it may still be a great idea to think about a project from a progressive enhancement point of view. For example, if you are building a site that is dedicated to showing off specific content, or providing access to media files, there is a lot that can be conveyed in traditional HTML. That content can be loaded and accessible to a wide range of devices, then Javascript, which is very reliable these days, can enhance the content to provide modern features.
+
+But there are limitations to progressive enhancement. For example, what if you have a web application, and this application relies on the interaction of the user with Javascript to have any value? We aren't imaginging a site that wants to show you a video; imagine instead a site that wants to help you make a video. What is the value of a "static" or "traditional" page in that context? Probably not much.
+
+## What webapps want
+Dynamic webapps have a whole different set of considerations. If Javascript is not enabled, then the entire app is going to be unusable. So why bother having robust fallback content? (Other than a helpful error message, of course.)
+
+Other issues come up when you work 

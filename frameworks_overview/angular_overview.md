@@ -13,4 +13,15 @@ Learning any framework takes time and effort. It's important to be diligent abou
 
 AngularJS, like any framework, has a "philosophy" or "worldview". That view is centered around powerful templates, revealing functionality through custom HTML elements ("Directives"), keeping data streaming through the system, and keeping logic contained in discrete locations. The end result of this is that developers are given easy to manipulate components that can easily be moved around to dramatically alter visual presentation and user experience without requiring any changes to the underlying code.
 
-This gives AngularJS exceptionally powerful templates, and allows both highly trained and more novice developers to contribute productively to a project. That is why we are using this framework for our experiment here. I have found AngularJS to be quite approachable and a great way to get into the world of dynamic Single Page Applications. I hope you have a similarly good experience experimenting with it through the next several chapters.
+This gives AngularJS exceptionally powerful templates, and allows both highly trained and more novice developers to contribute productively to a project. 
+
+## Core concepts in AngularJS
+In order to set us up for moving through the work described in the next several chapters, it's useful to get a grasp on some of the core concepts of AngularJS. Over the next few pages we will discuss these basic principles of the framework:
+
+* Data Models
+* Routes
+* Views
+* Controllers
+* Directives
+
+

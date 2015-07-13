@@ -7,6 +7,7 @@ Fortunately, there are some common concepts that tend to be at work in these app
 Most web application frameworks will be described as "MVC" frameworks. This means they, in some way, implement the "Model View Controller" approach to application design. This is an approach that has been in use since the beginning of graphical computing, and it defines three basic concepts that can be applied to almost any application.
 
 ![Model View Controller Schematic](img/mvc_schematic.png)
+[(Ilustration used courtesy Regis Frey.)](https://en.wikipedia.org/wiki/File:MVC-Process.svg)
 
 ### Model
 The "model" represents the data in the system. All the information and the algorithms that make that information useful are rolled up into the concept of the model. It is our model of whatever concept, object, or event we are working with in our application. This model retrieves data, stores data, and manipulates data to make it useful to our users.
@@ -24,4 +25,4 @@ The "controller" provides an method for the User to interact with the applicatio
 In our example Twitter app, one controller element that could be presented to the user would be a form for sending a new Tweet. Other controller elements could include the Favorite and the Retweet buttons. All of these interface elements would result in the controller sending information back to the model that would ultimately result in the data in the model being updated and the views being updated as well.
 
 ## The virtuous cycle
-
+The three components of an MVC system work together to keep the application responsive to the user and constantly updated. Although this core concept is incredibly popular, frameworks that implement the idea of an MVC approach are diverse and varied. It's critical to understand the basic concept here, but also critical to learn the specifics of whatever framework you are working with.

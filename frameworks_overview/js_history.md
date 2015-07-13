@@ -43,6 +43,17 @@ jQuery has been a great solution for making dynamic web pages in many ways:
 * It has good support for making "AJAX" (asynchronous Javascript) requests.
 * It has a "plugin" system that allows developers to create custom functionality and complex modules to make specific effects happen, and those plugins can be leveraged in a fairly standardized way.
 
+## Recent Javascript
+Recently, Javascript has enjoyed another surge of popularity. Already firmly established since the creation of frameworks like jQuery, Javascript has moved everywhere the web has moved. As televisions, in-car navigation systems, and mobile devices have all leveraged web technologies, Javascript has become a part of those ecosystems.
+
+In 2009 Node.js was created, giving developers a very fast and robust implementation of a Javascript engine that could run on the server. This has opened the door to a whole new wave of module development, with thousands of modules now created for Node.js. The architectural concepts pushed by Node.js have led to changes in how webapps and websites use interdependent Javascript modules. 
+
+The rise of Node.js popularity has led to Javascript being placed on all sorts of embedded machines, too. There is a whole subculture built around gadgets, like drones and hobby robots, powered by Javascript code. 
+
+The enhanced interest in using Javascript has led to other noteworthy developments, too. The entire development environment and stack that we are using for this project is Javascript-based. As we build our pages we use a huge array of Javascript tools to help us, and we write Javascript that runs in the browser for our users as they use our sites. 
+
+Javascript, again, is everywhere, and it is a cornerstone of web development for the foreseeable future.
+
 ## The challenge of progressive enhancement
 The generation of Javascript libraries that birthed tools like jQuery in the mid-2000s was an era built around "progressive enhancement" (and, sometimes, progressive enhancement's less appealing cousin, "graceful degradation"). Developers could not be sure that all users would have browsers supporting Javascript, and if they did standards adoption among browser makers could be spotty, so the Javascript might not work. Because of this, developers had to always guard against breakage.
 

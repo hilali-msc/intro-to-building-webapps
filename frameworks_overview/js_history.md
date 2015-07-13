@@ -52,6 +52,6 @@ The rise of Node.js popularity has led to Javascript being placed on all sorts o
 
 The enhanced interest in using Javascript has led to other noteworthy developments, too. The entire development environment and stack that we are using for this project is Javascript-based. As we build our pages we use a huge array of Javascript tools to help us, and we write Javascript that runs in the browser for our users as they use our sites. 
 
-Javascript, again, is everywhere, and it is a cornerstone of web development for the foreseeable future.
+Javascript, again, is everywhere.
 
 

@@ -64,3 +64,7 @@ $scope.calculateCost = function() {
     $scope.totalCost = $scope.qty * $scope.cost;
 };
 ```
+
+In the updated example, AngularJS will watch for changes to the two text inputs, and when a change is detected the `calculateCost()` function will be executed. That function will update the value of `$scope.totalCost`, which will update the display in the template.
+
+It's worth pointing out that in the Javascript controller we reference these variables as part of the `$scope` object (like so: `$scope.qty`, `$scope.cost`, `$scope.calculateCost()`), but when we reference these `$scope` values in the templates, we can refer directly to the values and drop the `$scope`. So in the template we can just refer to `qty` or `cost` or `calculateCost()`.

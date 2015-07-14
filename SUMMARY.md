@@ -27,7 +27,7 @@
     * [Après Deployment](building_projects/deployment_conclusion.md)
 * [Web Application Frameworks Overview](frameworks_overview/README.md)
     * [A Brief History of Javascript](frameworks_overview/js_history.md)
-    * [The Evolving Structure of Websites](frameworks_overview/evolving_websites.md)
+    * [Evolving Approaches to Web Development](frameworks_overview/evolving_websites.md)
     * [Model View Controller](frameworks_overview/mvc.md)
     * [A Summary of Popular JS Frameworks](frameworks_overview/js_frameworks_summary.md)
     * [AngularJS Overview](frameworks_overview/angular_overview.md)

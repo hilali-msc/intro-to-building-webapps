@@ -20,8 +20,8 @@ In order to set us up for moving through the work described in the next several 
 
 * Data Models
 * Routes
-* Views
 * Controllers
-* Directives
+* Views
+
 
 

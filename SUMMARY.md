@@ -44,4 +44,5 @@
 * Things for the Future
 * [Appendix](appendix/README.md)
     * [Git Reference](appendix/git_reference.md)
+    * [CSS Preprocessor Comparison](appendix/preprocessor_comparison.md)
     * [Links and Resources](appendix/links.md)

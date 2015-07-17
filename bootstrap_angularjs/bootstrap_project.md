@@ -18,5 +18,10 @@ Now that you're in the right location, run the bootstrap command:
 yo angular
 ```
 
+![AngularJS project bootstrap menu](img/yo_angular.png)
 
 That will bring up the standard Yeoman bootstrap interface. Answer all the questions Yes (even the one about using Compass) and select all the Angular modules: we will explore many of them. 
+
+Once you hit enter after selecting all the modules, Yeoman will proceed to build out the project.
+
+**Please Note:** At the time of writing, there is a small issue where you may be prompted to overwrite `package.json` at some point during the installation process. This is an issue with the `generator-angular` scripts, and you should answer `Y` to overwrite the file. Unfortunately, during the installation, when it prompts you to enter that response, there is not time to actually do so. Keep watching the progress on the bootstrapping and **eventually it will stop and look like it has frozen up**. The process hasn't actually froze. In order to continue, type "Y" and press `return`. You should see the final results of the bootstrap process ending with a success message.

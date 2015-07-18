@@ -7,3 +7,4 @@ The `grunt-build-control` component must be installed into each project where yo
 ```bash
 npm install grunt-build-control --save-dev
 ```
+

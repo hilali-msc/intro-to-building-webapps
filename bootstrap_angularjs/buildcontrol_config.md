@@ -33,7 +33,7 @@ require('jit-grunt')(grunt, {
 ```
 
 ## Configure the `buildcontrol` task
-In order to use `grunt-build-control`, it's necessary to create a JSON object to configure the task. The order of your tasks in the `grunt.initConfig()` doesn't matter, but it's important you do not break another task configuration. To keep things easy, I advocate placing this definition right before the definition for the `watch` task (which is what Grunt uses to know when you've changed files when you are running the local server).
+You also need to create the task object inside of `grunt.initConfig()`. To keep things easy, I advocate placing this definition right before the definition for the `watch` task (which is what Grunt uses to know when you've changed files when you are running the local server).
 
 This should looks something like this:
 
@@ -42,7 +42,7 @@ This should looks something like this:
   grunt.initConfig({
 
     // Project settings
-    config: config,
+    yeoman: appConfig,
 
     buildcontrol: {
       options: {

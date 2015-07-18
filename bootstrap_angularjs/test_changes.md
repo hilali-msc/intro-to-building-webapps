@@ -13,3 +13,33 @@ If you feel like you're running on steam and you need to conclude this phase of 
 
 ## Stretch Goal: Make an adding machine.
 To test out some of the core features of AngularJS, we will recreate the example we had in the previous chapter.
+
+To do this, we will add a couple of `<input>` elements and then do a little math using the AngularJS template tags. 
+
+Paste this code somewhere in either your `main.html` or `about.html` files:
+
+```html
+<div ng-app ng-init="firstnum=1;secondnum=2">
+  <input type="number" min="0" ng-model="firstnum">
+    plus
+  <input type="number" min="0" ng-model="secondnum">
+    equals 
+  <b>{{firstnum + secondnum}}</b>
+</div>
+```
+
+We will get into these concepts in more depth in coming chapters, but for now, here is a brief explanation of what's happening in that code (and this matches with the information we saw about [Models](frameworks_overview/ng_models.md) in the previous chapter).
+
+First, we make a `<div>` element and we add the `ng-app` attribute to let AngularJS know that inside this `<div>` is going to be an AngularJS app.
+
+Then we add in a couple of `<input>` elements. Each input defines a new variable, which AngularJS calls a "model", so we use the `ng-model` attribute to assign a name to whatever value gets typed into those `<input>` elements.
+
+Finally, we output the sum of the two numbers. AngularJS templates use the double curly brace (`{{ ... }}`) syntax to output the value of a variable to the template. Hence, the `{{firstnum + secondnum}}` line. Notice that output is going to return a number. We could put whatever tags around it we want. Right now, there are `<b>` tags around it, but you could just as easily turn it into a Bootstrap label by changing it to something like this:
+
+```html
+<span class="label label-success">{{firstnum + secondnum}}</span>
+```
+
+When you preview this in your browser you should see something like this:
+
+

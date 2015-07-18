@@ -139,3 +139,7 @@ concurrent: {
   ]
 },
 ```
+
+## Test your project
+Now that you've updated `grunt` to use `grunt-sass` instead of `compass`, you can try out your new project. Run `grunt serve` to view your project in a web browser. You should see something like this:
+

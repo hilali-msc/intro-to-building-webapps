@@ -42,4 +42,6 @@ Finally, we output the sum of the two numbers. AngularJS templates use the doubl
 
 When you preview this in your browser you should see something like this:
 
+![Addition in the browser!](img/addition.png)
 
+Type in two numbers and the sum total will change on its own. This is one of the cool things about AngularJS. We will dive into much more as we continue to explore.

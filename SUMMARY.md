@@ -36,7 +36,14 @@
     * [Controllers](frameworks_overview/ng_controllers.md)
     * [Views](frameworks_overview/ng_views.md)
     * [Conclusion](frameworks_overview/conclusion.md)
-* Bootstrapping an AngularJS Application
+* [Bootstrapping an AngularJS Application](bootstrap_angularjs/README.md)
+    * [Install `generator-angular`](bootstrap_angularjs/install_generator-angular.md)
+    * [Bootstrap a New Project](bootstrap_angularjs/bootstrap_project.md)
+    * [Configure SASS](bootstrap_angularjs/sass_config.md)
+    * [Explore Your New Project](bootstrap_angularjs/explore_project.md)
+    * [Change Making](bootstrap_angularjs/test_changes.md)
+    * [Configure `grunt-build-control`](bootstrap_angularjs/buildcontrol_configure.md)
+    * [Conclusion](bootstrap_angularjs/conclusion.md)
 * Making an API Call to Fetch Data
 * Using Data in Views
 * Applying Animation and Interface Enhancements

@@ -88,14 +88,21 @@ views/
 |----main.html
 ```
 
-We will work within this structure for the rest of the book. The `styles` directory will work pretty much like it did in our previous webapp experiments. We will likely want to copy over the Bootstrap _variables.scss file and set up some partial stylesheets. We will work on that in the next chapter. For now we will leave the styles as-is.
+We will work within this structure for the rest of the book. But before we get ahead of ourselves, let's take a quick stroll through these files and directories to see what's there.
 
+### `index.html`
 Note that the `index.html` file still provides the starting point for a browser to interact with our webapp. This page is loaded first, and you will find that it still must set up the basics for viewing the page: It defines a viewport, doctype, sets up meta tags, and includes our scripts and styles. This looks a lot like the `index.html` file we used in our previous experiments, but the difference now is that most of our work in AngularJS will take place in our `views`, which are partial templates. This `index.html` file will rarely be touched once it's all set up.
 
+### Styles
+The `styles` directory will work pretty much like it did in our previous webapp experiments. We will likely want to copy over the Bootstrap _variables.scss file and set up some partial stylesheets. We will work on that in the next chapter. For now we will leave the styles as-is.
+
+
+### Scripts
 The `scripts` directory is where much of our work will take place. This is where all the Javascript we write for our app goes. By default we have an `app.js` file, which defines our application for AngularJS. The `app.js` file is used in several different ways, and we'll explore that a lot more over the coming chapters.
 
 Also in the `scripts` directory is a `controllers` sub-directory. The `controllers` are what handles manipulating data and setting up the Javascript functions that are available to our `views`. By default, the Yeoman generator has set us up with two views: `about` and `main`. These two views each have a unique controller, so within the `scripts/controllers/` directory we find two corresponding Javascript files.
 
+### Views
 Finally, we come to the `views` directory. Inside are two `.html` files. If you look inside those `.html` files you will notice that they are not actually entire HTML documents. They are, in fact, "partials" -- meaning that they are partial HTML templates. This is what AngularJS uses to render new HTML into the overall single page app structure. These parts of HTML files will be brought into our `index.html` file as the user interacts with our app.
 
 The best way to get a feel for how this is going to work is to make a few changes and see. So that's what we'll do next.

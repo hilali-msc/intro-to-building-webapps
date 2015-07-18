@@ -143,3 +143,6 @@ concurrent: {
 ## Test your project
 Now that you've updated `grunt` to use `grunt-sass` instead of `compass`, you can try out your new project. Run `grunt serve` to view your project in a web browser. You should see something like this:
 
+![Default AngularJS app homescreen.](img/angular_default_hello.png)
+
+If you see a page like that, then you have successfully updated your project to use `grunt-sass` and you are almost done setting up your project environment.

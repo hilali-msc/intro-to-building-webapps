@@ -47,7 +47,7 @@ If you look inside `bower.json` you will notice there are many more components l
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "test3App",
+  "moduleName": "yourAppName",
   "overrides": {
     "bootstrap": {
       "main": [

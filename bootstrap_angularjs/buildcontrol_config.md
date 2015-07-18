@@ -64,3 +64,16 @@ This should looks something like this:
     
     ... more code ...
 ```
+
+Once you've completed these steps you may commit your code and deploy it.
+
+## Commit and deploy
+Commit your code using the same process you have before. Once you commit you should run:
+
+`grunt build`
+
+and then
+
+`grunt buildcontrol`
+
+Once the `buildcontrol` command completes, you can visit your project on Github Pages to see the files deployed. You should see the same thing you saw in your local development browser, and your addition calculator (if you went that far) should be fully functional.

@@ -20,7 +20,7 @@ require('jit-grunt')(grunt, {
 });
 ```
 
-Modify that `require()` definition to add a `buildcontrol` line, like so:
+Modify that `require()` definition to add a `buildcontrol` line, like this:
 
 ```js
 // Automatically load required Grunt tasks

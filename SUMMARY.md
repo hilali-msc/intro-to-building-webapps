@@ -42,7 +42,7 @@
     * [Configure SASS](bootstrap_angularjs/sass_config.md)
     * [Explore Your New Project](bootstrap_angularjs/explore_project.md)
     * [Change Making](bootstrap_angularjs/test_changes.md)
-    * [Configure `grunt-build-control`](bootstrap_angularjs/buildcontrol_configure.md)
+    * [Configure `grunt-build-control`](bootstrap_angularjs/buildcontrol_config.md)
     * [Conclusion](bootstrap_angularjs/conclusion.md)
 * Making an API Call to Fetch Data
 * Using Data in Views

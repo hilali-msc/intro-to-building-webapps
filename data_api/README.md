@@ -10,3 +10,11 @@ We will use [OpenWeatherMap.org](http://openweathermap.org) to provide our data.
 
 Ultimately, we will provide a way for users to store a list of cities so they can easily return to our app and pull up their preferred weather forecasts. We will do this using local storage techniques, which means the data will not sync for users between browsers or devices. For now, this will be an acceptable limitation (although it's easy to work around that with a little server-side storage).
 
+Here are some wireframe illustrations of the webapp we will work on for the rest of this book:
+
+![Webapp Wireframes](img/webapp_wireframe.png)
+
+This set of wireframes shows three different views (and two states of the "home" view), which we will build out over the next few chapters. There are many ways to enhance and otherwise customize this app to allow you to explore the areas of webapp building that you are most interested in. You can work on your interface design skills, experiment with animation to enhance the experience, or continue to build out a more robust weather application that can do more for the user. You can even use this basic app to build something like [DoINeedAnUmbrella.com](http://doineedanumbrella.com) or other weather-based jokes and artwork.
+
+## Put the data in the app
+Whatever else you decide to do with your weather application, it is essential to set up the data piping so that you can start to make use of all this rich weather information you can receive from OWM. In order to do that, you'll need to have an understanding of how an API works, how you can use it, and what you can do with it. We will cover all this and more as we set up your data models in this chapter.

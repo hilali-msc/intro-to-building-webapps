@@ -45,7 +45,7 @@
     * [Configure `grunt-build-control`](bootstrap_angularjs/buildcontrol_config.md)
     * [Conclusion](bootstrap_angularjs/conclusion.md)
 * Making an API Call to Fetch Data
-* Using Data in Views
+* Managing and Using Data
 * Applying Animation and Interface Enhancements
 * Writing Tests
 * Things for the Future

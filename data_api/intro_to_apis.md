@@ -82,4 +82,64 @@ Presumably, if `domain.com` follows best practices, that URL would allow us to e
 
 When we edit the information on the page and click submit, we are making a brand new request to the web server. This request defines all of the information the server requires in order to respond to our request. This time, when we send data to the server we include "form data", which is the data collected using HTML `form` elements (`input`, `select`, etc.). This form data provides the information we want the server to put into the database for us. 
   
+## Data
+REST APIs respond with data that can be contained in an HTTP response. This generally means text. The text can return a URL reference to a media file, of course, but then you must actually use that URL properly in your HTML to allow the user to see that media. You might insert an image tag, or a video tag, or whatever other HTML structure is needed to display the media.
 
+The text responses returned by REST APIs tend to either be formatted as [JSON (Javascript Object Notation)](http://json-schema.org/) responses or [XML (eXtensible Markup Language)](https://en.wikipedia.org/wiki/XML) responses. The trend today is toward JSON since it is more easily consumed by Javascript applications, and for our purposes we will expect JSON responses.
+
+Here is a sample API response from OpenWeatherMaps.org for the query `api.openweathermap.org/data/2.5/weather?q=seattle,wa,us&units=imperial&id=4717560d`:
+
+```json
+{
+  ...
+  
+  "weather": [
+    {
+      "id": 701,
+      "main": "Mist",
+      "description": "mist",
+      "icon": "50d"
+    }
+  ],
+  
+  ...
+  
+  "main": {
+    "temp": 61.05,
+    "pressure": 1018,
+    "humidity": 63,
+    "temp_min": 57.2,
+    "temp_max": 64.99
+  },
+  "wind": {
+    "speed": 4.54,
+    "deg": 220
+  },
+  "clouds": {
+    "all": 90
+  },
+  
+  ...
+  
+  "id": 5809844,
+  "name": "Seattle",
+}
+```
+In this example, I have removed a few pieces of the response to make it a little easier to read. (The missing pieces are indicated by the `...` lines.)
+
+As you read through this example response, it's pretty easy to see some interesting data fields. We can see that this data object contains several "root level" or "base" attributes: `weather`, `main`, `wind`, `clouds`, `id`, `name`. This is the "current weather" data for Seattle. We are given the ID, which is a more reliable way of not getting confused with the other cities called "Seattle". We also have a weather summary (at the moment "Mist"), current temperature (61.05F), cloud coverage (90%), and more. With this information, we can build a solid weather report. 
+
+When this data object is received by our AngularJS app, AngularJS will parse the information into a Javascript object. We can call that object whatever we want (perhaps `weatherReport`?) and we can pipe that into our view templates like this:
+
+```html
+<h1>Weather report for {{weatherReport.name}}</h1>
+<p>Current conditions: {{weatherReport.weather.main}}, {{weatherReport.main.temp}}F</p>
+```
+And then our users would see this rendered in our webapp:
+
+<hr>
+<h1>Weather report for Seattle</h1>
+<p>Current conditions: Mist, 61F</p>
+<hr>
+
+This is just a quick preview of how handy it is to use a tool like AngularJS to interact with data APIs that deliver JSON responses. We will explore much more about how to make this all work in our webapp over the next few pages of this chapter.

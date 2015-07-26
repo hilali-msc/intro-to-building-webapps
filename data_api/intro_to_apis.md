@@ -65,7 +65,11 @@ When HTML forms are sent using the GET method, the data from the form fields is 
 http://domain.com/catalog/search?q=slippers&brand=fuzzybunny&gender=male&size=14
 ```
 
-In the example above you can see several query string parameters have been defined: `q`, `brand`, `gender`, and `size`. It is very common to use query string parameters to represent things like search filters. On many ecommerce websites you will notice that the filters you choose in the catalog are easily identifiable in the query string parameters for the catalog page you are viewing.
+In the example above you can see several query string parameters have been defined: `q`, `brand`, `gender`, and `size`. It is very common to use query string parameters to represent things like search filters. On many ecommerce websites you will notice that the filters you choose in the catalog are easily identifiable in the query string parameters for the catalog page you are viewing. 
+
+The URL above could have come from an HTML form with fields called `q`, `brand`, `gender`, and `size` that was sent using the GET method. This is handy in cases where we want to be able to copy/paste a URL and have our friend see the same results (in this case, a selection of very large fuzzy bunny slippers).
+
+In other situations, it would not be proper to send the data contained in an HTML form as part of the URL. The URL of a request can never be encrypted, since it must be used to route all of the pieces of the request from client to server. Therefore, any data sent using the GET method is going to be visible to all the network nodes those bits pass through. In the case of sensitive information (such as passwords or credit card numbers), it's much better to use POST and PUT so that the message body content can be properly encrypted via HTTPS and much less visible to any nefarious agents.
 
 ## State(less)
 REST is "stateless". (So is the web.) This means that each request to a web server (or a REST API service) must define all of the parameters to receive the desired response. In RESTful services, all of these parameters are packed into the URL and form data. Imagine the number of times you've seen a URL that looks like this:

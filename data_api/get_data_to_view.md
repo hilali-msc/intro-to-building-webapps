@@ -106,3 +106,5 @@ $scope.current = current.query({
 Since `$scope.location` was already updated as soon as the user typed the new location into the text box, this new API request sends the updated location to OpenWeatherMaps.org, which responds with the new data.
 
 Finally, since AngularJS knows that all the places where we display data are bound to that `$scope.current` variable, then it automatically updates everywhere that data is used in our view as soon as it receives the new data. We do not have to manually refresh the view or update any HTML elements by hand, which is a major advantage to using a framework like AngularJS. 
+
+Now that we have this all connected, you should be able to try this in your web browser and see how it works.

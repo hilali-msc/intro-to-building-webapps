@@ -21,4 +21,4 @@ The other parameter references our `current` data model. Now that we've added it
 $scope.current = current.query();
 ```
 
-This line sets a variable in `$scope` called `current` equal to the results of the `query()` method on the 
+This line sets a variable in `$scope` called `current` equal to the results of the `query()` method on the `current` data model. Since we are not supplying any parameters in our `current.query()` call, the API should respond with our default query (for 'Seattle,us').

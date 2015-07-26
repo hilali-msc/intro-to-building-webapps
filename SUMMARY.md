@@ -44,7 +44,13 @@
     * [Change Making](bootstrap_angularjs/test_changes.md)
     * [Configure `grunt-build-control`](bootstrap_angularjs/buildcontrol_config.md)
     * [Conclusion](bootstrap_angularjs/conclusion.md)
-* Making an API Call to Fetch Data
+* [Making an API Call to Fetch Data](data_api/README.md)
+    * [Introduction to APIs](data_api/intro_to_apis.md)
+    * [Get Your OWM API Key](data_api/get_owm_api_key.md)
+    * [Create Data Models](data_api/create_data_models.md)
+    * [Get the Data to the View](data_api/get_data_to_view.md)
+    * [Changes Recap](data_api/changes_recap.md)
+    * [Conclusion](data_api/conclusion.md)
 * Managing and Using Data
 * Applying Animation and Interface Enhancements
 * Writing Tests

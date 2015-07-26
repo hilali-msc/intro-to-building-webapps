@@ -13,7 +13,7 @@ The My Home page looks like this (please note the API Key field):
 Now that you have your API key, you are ready to continue with the work in this chapter using the OWM API. 
 
 # Exploring the API
-Whenever I begin using a new data API, I like to spend a little time exploring the API documentation and trying requests using a tool like [Postman for Google's Chrome browser](https://chrome.google.com/webstore/detail/postman/).
+Whenever I begin using a new data API, I like to spend a little time exploring the API documentation and trying requests using a tool like [Postman for Google's Chrome browser](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en).
 
 ![Postman for Google Chrome Interface](img/postman1.png)
 

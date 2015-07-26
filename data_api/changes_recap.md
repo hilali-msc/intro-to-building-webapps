@@ -1,0 +1,2 @@
+# Changes in this Chapter
+Since this chapter involves several changes to several files, it can be tricky to make sure you've made all the required changes. Doublecheck your work against this page to make sure you didn't miss anything.

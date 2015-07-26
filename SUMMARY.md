@@ -46,7 +46,7 @@
     * [Conclusion](bootstrap_angularjs/conclusion.md)
 * [Adding Data to the App](data_api/README.md)
     * [Introduction to APIs](data_api/intro_to_apis.md)
-    * [Get Your OWM API Key](data_api/get_owm_api_key.md)
+    * [Prerequisites for Using Data APIs](data_api/get_owm_api_key.md)
     * [Create Data Models](data_api/create_data_models.md)
     * [Get the Data to the View](data_api/get_data_to_view.md)
     * [Changes Recap](data_api/changes_recap.md)

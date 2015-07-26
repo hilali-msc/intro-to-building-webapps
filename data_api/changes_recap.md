@@ -76,8 +76,8 @@ angular.module('yourApp')
         </p>
       <dl>
         <dt>Currently</dt>
-        <dd>{{current.weather.main}}</dd>
-        <dd>{{current.weather.description}}</dd>
+        <dd>{{current.weather[0].main}}</dd>
+        <dd>{{current.weather[0].description}}</dd>
         <dt>Temperature</dt>
         <dd>{{current.main.temp}}</dd>
         <dt>Wind</dt>

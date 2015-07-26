@@ -1,0 +1,62 @@
+# An Introduction to Data APIs
+The topic of Data APIs is really too broad to be covered thoroughly here. It is a topic full of nuance and importance, especially for developers creating Data APIs. When designing an API, it is as complex as designing a framework or code library: You are trying not only to solve a problem, but to solve it in a way that is understandable and accessible to everyone.
+
+Luckily, we do not need to design an API for our purposes here. We need only to "consume" an API: That is, we will make requests to an API service and we will receive responses from that service that contain data we can use in our Javascript application. This process requires us to get to know the shape of some data returned from a chosen service, but it does not require us to understand the finer points of how APIs are put together.
+
+Just so we aren't diving in completely blind, we will review some of the basics of how APIs work so that we can more easily understand the directions we see in our chosen API's documentation. 
+
+# REST
+There are many kinds of APIs, but the dominant architecture on the web today is called "REST". You may see references to "RESTful APIs" or "REST-based APIs"&mdash;these are all ways of talking about an API that uses REST architecture.
+
+REST stands for ["Representational State Transfer"](https://en.wikipedia.org/wiki/Representational_state_transfer), and although it sounds quite complex, it's something that you encounter every day. REST is the way the web works, and the concept was, in fact, defined by [Roy Fielding](https://en.wikipedia.org/wiki/Roy_Fielding) (co-founder of the Apache web server project) as he worked on defining the HTTP protocol. REST feels natural on the web because REST is the way the web works.
+
+## Requests
+REST is an architectural principle based on the client-server model. REST assumes that there is a client (web browser, Javascript app, mobile app, etc.) that wishes to consume data from a server (web server, API service, etc.).
+
+When we make a request to a web server or API service, we are essentially sending our own file of information. The request is structured in a way similar to any HTML response we get. Requests have a "method", "headers", and a "body". Each of these parts of the request is taken apart and inspected by the web server (or API service) in order to understand how to respond. 
+
+### Methods
+Methods are the "verbs" of the web. RESTful services use the base methods defined in the HTTP specification to handle data. These methods are:
+
+* **GET**&mdash;Retrieves information for the client without altering any data on the server. This is commonly known as the "read" method.
+* **POST**&mdash;Creates an entirely new record or data object on the server based on information sent by the client. This is often called the "create" method, and it is the most common method for HTML forms to use in order to send data back to the server.
+* **PUT**&mdash;Updates the specified record with the data contained in the request. This is known as the "update" method.
+* **DELETE**&mdash;Deletes the record specified by the client on the server. Most people don't feel the need to rename the "delete" method.
+
+In working with any data content, we often use the CRUD acronym to describe basic functions of handling data: Create, Read, Update, Delete. The basic methods of HTTP mirror this concept very well, making them efficient at handling our data management needs.
+
+### Headers
+In any request, the headers are of importance. Headers contain all sorts of data used by the server to determine the proper response. Each header has a meaning and an impact on the request, but for the most part we never pay much attention to the headers being sent each time we access a website. Here is a snippet of the headers sent when requesting `google.com`:
+
+```
+GET / HTTP/1.1
+Host: google.com
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36
+X-Chrome-UMA-Enabled: 1
+X-Client-Data: CIm2yQEIpbbJAQiptskBCMG2yQEI7YjKAQifl8oB
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+```
+
+You can easily see the request is using the GET method, and you can probably figure out quite a few more details about the request (language, browser, etc.). You can view the headers used in any request made by your web browser by looking at the `Network` tab in the Chrome developer tools:
+
+
+
+## State(less)
+REST is "stateless". (So is the web.) This means that each request to a web server (or a REST API service) must define all of the parameters to receive the desired response. In RESTful services, all of these parameters are packed into the URL and form data. Imagine the number of times you've seen a URL that looks like this:
+
+```
+http://domain.com/profile/username/edit/?preference=value&preference2=value2
+```
+
+Presumably, if `domain.com` follows best practices, that URL would allow us to edit the profile for the user with the specified `username`. The server responding to this request would be able to fetch the data for the specified `username` and serve us back a web page designed to allow us to edit that information. No extra information is required to receive our desired response, and no information from this request will be used in any other response the server sends.
+
+Sometimes, in addition to the URL itself, we will include "query string parameters" attached to the URL. These are attached with a question mark (`?`). In the example above you can see two query string parameters have been defined: `preference` and `preference2`. It is very common to use query string parameters to represent things like search filters. On many ecommerce websites you will notice that the filters you choose in the catalog are easily identifiable in the query string parameters for the catalog page you are viewing.
+
+When we edit the information on the page and click submit, we are making a brand new request to the web server. This request defines all of the information the server requires in order to respond to our request. This time, when we send data to the server we include "form data", which is the data collected using HTML `form` elements (`input`, `select`, etc.). This form data provides the information we want the server to put into the database for us. 
+  
+

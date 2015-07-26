@@ -13,7 +13,7 @@ REST stands for ["Representational State Transfer"](https://en.wikipedia.org/wik
 ## Requests
 REST is an architectural principle based on the client-server model. REST assumes that there is a client (web browser, Javascript app, mobile app, etc.) that wishes to consume data from a server (web server, API service, etc.).
 
-When we make a request to a web server or API service, we are essentially sending our own file of information. The request is structured in a way similar to any HTML response we get. Requests have a "method", "headers", and a "body". Each of these parts of the request is taken apart and inspected by the web server (or API service) in order to understand how to respond. 
+When we make a request to a web server or API service, we are essentially sending our own file of information. The request is structured in a way similar to any HTML response we get. Requests have a "method", "headers", and a "message body". Each of these parts of the request is taken apart and inspected by the web server (or API service) in order to understand how to respond. 
 
 ### Methods
 Methods are the "verbs" of the web. RESTful services use the base methods defined in the HTTP specification to handle data. These methods are:
@@ -44,18 +44,37 @@ Accept-Language: en-US,en;q=0.8
 
 You can easily see the request is using the GET method, and you can probably figure out quite a few more details about the request (language, browser, etc.). You can view the headers used in any request made by your web browser by looking at the `Network` tab in the Chrome developer tools:
 
+![Network Tab in Chrome Developer Tools](img/network-tab.png)
 
+Click any of those requests and you'll see a summary of the request and response including all headers and data. (Please note: Being able to look at what your browser is doing like this can be very helpful when trying to figure out why your API-dependent app is not working properly.)
+
+Sometimes when working with data APIs you will need to set a header. For example, authorization to use an API may involve you sending your API token as an HTTP header. This header is sometimes specified like so:
+
+```
+Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
+```
+
+Most libraries you use to consume data APIs will provide a convenient way to set a header to a specified value. Many frameworks are specifically designed to minimize how much manual management of headers you must perform. When you set configuration options and other setup details you may actually be specifying that the framework or library will include or exclude specific headers. It's worthwhile to be cognizant of what headers are being used in your API requests.
+
+### Message Body
+The request contains a message body, which contains any data the client is sending to the server. In the case of POST and PUT methods, data is sent to the server for interpretation and then handling (usually it is being saved into the database). 
+
+When HTML forms are sent using the GET method, the data from the form fields is serialized into "query string parameters". These are attached with a question mark (`?`), like so: 
+
+```
+http://domain.com/catalog/search?q=slippers&brand=fuzzybunny&gender=male&size=14
+```
+
+In the example above you can see several query string parameters have been defined: `q`, `brand`, `gender`, and `size`. It is very common to use query string parameters to represent things like search filters. On many ecommerce websites you will notice that the filters you choose in the catalog are easily identifiable in the query string parameters for the catalog page you are viewing.
 
 ## State(less)
 REST is "stateless". (So is the web.) This means that each request to a web server (or a REST API service) must define all of the parameters to receive the desired response. In RESTful services, all of these parameters are packed into the URL and form data. Imagine the number of times you've seen a URL that looks like this:
 
 ```
-http://domain.com/profile/username/edit/?preference=value&preference2=value2
+http://domain.com/profile/username/edit/
 ```
 
 Presumably, if `domain.com` follows best practices, that URL would allow us to edit the profile for the user with the specified `username`. The server responding to this request would be able to fetch the data for the specified `username` and serve us back a web page designed to allow us to edit that information. No extra information is required to receive our desired response, and no information from this request will be used in any other response the server sends.
-
-Sometimes, in addition to the URL itself, we will include "query string parameters" attached to the URL. These are attached with a question mark (`?`). In the example above you can see two query string parameters have been defined: `preference` and `preference2`. It is very common to use query string parameters to represent things like search filters. On many ecommerce websites you will notice that the filters you choose in the catalog are easily identifiable in the query string parameters for the catalog page you are viewing.
 
 When we edit the information on the page and click submit, we are making a brand new request to the web server. This request defines all of the information the server requires in order to respond to our request. This time, when we send data to the server we include "form data", which is the data collected using HTML `form` elements (`input`, `select`, etc.). This form data provides the information we want the server to put into the database for us. 
   

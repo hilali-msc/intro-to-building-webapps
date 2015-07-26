@@ -48,7 +48,7 @@ In order to display this information, we must modify our view so that it will sh
         <dt>Temperature</dt>
         <dd>{{current.main.temp}}</dd>
         <dt>Wind</dt>
-        <dd>{{current.wind.speed}} mph at {{current.wind.direction}} degrees</dd>
+        <dd>{{current.wind.speed}} mph at {{current.wind.deg}} degrees</dd>
         <dt>Clouds</dt>
         <dd>{{current.clouds.all}}%</dd>
       </dl>
@@ -60,3 +60,49 @@ As you can see, there are variable outputs peppered throughout this HTML. The `<
 
 If you run your server and view your webapp in the browser, you should now see the default results of the 'Seattle,us' query:
 
+![Default Current Weather Display](img/default-current.png)
+
+Congratulations! It's been a long road to get here, but this is the first time we're really working with serious data and a living application. Well, almost living...
+
+## Refresh the data
+Of course, one of the hallmarks of living apps is that you can do things with them, and right now if you type in the name of another city and click the "Get Current Weather" button, nothing happens. Right now, this button is not connected to anything. Notice in the code above the button contains a `ng-click` attribute:
+
+```html
+<button class="btn btn-lg btn-primary" ng-click="refreshCurrent()">Get Current Weather</button>
+```
+
+That `ng-click` attribute tells AngularJS that when this button is clicked it should execute the `$scope.refreshCurrent()` function. However, that function does not yet exist, so right now nothing happens. Let's fix that.
+
+Since the HTML for our view already contains the `ng-click` attribute on our button, all we need to do is create the `$scope.refreshCurrent()` function in our `MainCtrl` inside of `app/scripts/controllers/main.js`. Here is what that controller will look like once we've edited it:
+
+```js
+angular.module('yourApp')
+  .controller('MainCtrl', function ($scope, current) {
+    $scope.current = current.query();
+
+    $scope.refreshCurrent = function(){
+        $scope.current = current.query({
+            location: $scope.location
+        });
+    };
+  });
+```
+
+Notice that all we've done is add a function called `$scope.refreshCurrent`. This function takes no parameters, and it only has one line: It sets the value of `$scope.current` to the result of `current.query()`, and it sends `current.query()` a `location` parameter that is equal to the value of `$scope.location`.
+
+This might seem quite complex, so let's walk through what happens in the view as the user interacts with the webapp.
+
+First, the user loads the view. The `$scope.current` value is populated with the default data returned by `current.query()`. The user sees this default data displayed in their browser.
+
+Second, the user types a new location name into the text input. Since AngularJS has already bound `$scope.location` to that text input, the value of `$scope.location` is updated constantly as the user types. However, since the user must click the button to refresh the data, the information being displayed does not change.
+
+Third, the user clicks the "Get Current Weather" button, which executes the `$scope.refreshCurrent()` function. That function queries the `current` resource again, but this time it sends the `query()` method a `location` parameter:
+
+```js
+$scope.current = current.query({
+    location: $scope.location
+});
+```
+Since `$scope.location` was already updated as soon as the user typed the new location into the text box, this new API request sends the updated location to OpenWeatherMaps.org, which responds with the new data.
+
+Finally, since AngularJS knows that all the places where we display data are bound to that `$scope.current` variable, then it automatically updates everywhere that data is used in our view as soon as it receives the new data. We do not have to manually refresh the view or update any HTML elements by hand, which is a major advantage to using a framework like AngularJS. 

@@ -5,7 +5,7 @@ Luckily, we do not need to design an API for our purposes here. We need only to 
 
 Just so we aren't diving in completely blind, we will review some of the basics of how APIs work so that we can more easily understand the directions we see in our chosen API's documentation. 
 
-# REST
+## REST
 There are many kinds of APIs, but the dominant architecture on the web today is called "REST". You may see references to "RESTful APIs" or "REST-based APIs"&mdash;these are all ways of talking about an API that uses REST architecture.
 
 REST stands for ["Representational State Transfer"](https://en.wikipedia.org/wiki/Representational_state_transfer), and although it sounds quite complex, it's something that you encounter every day. REST is the way the web works, and the concept was, in fact, defined by [Roy Fielding](https://en.wikipedia.org/wiki/Roy_Fielding) (co-founder of the Apache web server project) as he worked on defining the HTTP protocol. REST feels natural on the web because REST is the way the web works.

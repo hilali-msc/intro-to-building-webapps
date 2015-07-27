@@ -25,6 +25,16 @@ These tools also help you form proper API requests. If your request is not prope
 
 [The Postman Documentation site](https://www.getpostman.com/docs) has a lot of useful information, tutorials, and guides for using Postman to explore API services. You are encouraged to read up on how to use this tool, or find a similar tool you prefer and use that one. It is very essential to have a way to view the data coming into your app, and to test your app's API queries, apart from your custom Javascript code.
 
+We will be using the OWM "current weather" feature today. You can read more about how this feature works on [the current weather documentation page](http://openweathermap.org/current). More information about how the OWM API works can be accessed from their API documentation homepage: [http://openweathermap.org/api](http://openweathermap.org/api).
+
+You will want to review those pages. Try using Postman to explore the current weather API endpoint. Plug this URL into Postman and do a GET query to see results like those shown above:
+
+```
+http://api.openweathermap.org/data/2.5/weather?q=Seattle,us&units=imperial
+```
+
+Try changing the units to "metric" or alter the location to see results for a different city. You should be able to see clear changes in the data returned. Can you make the API send results for Paris, France? How about Paris, Texas? Keep exploring until you feel like you have a basic understanding of how this API works.
+
 ## Using other APIs
 You can use the patterns described in this book to use any other REST API that serves JSON results. There are many, many APIs that fit that description. Some APIs require you to do more arduous authentication or to have your app approved before you will be granted developer privileges. Other APIs have steep charges for using them, and although you may be able to develop against them reasonably it would be prohibitively expensive to release a website using that API. These considerations and more should inform your decision as you look for APIs.
 

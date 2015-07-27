@@ -5,6 +5,17 @@ Luckily, we do not need to design an API for our purposes here. We need only to 
 
 Just so we aren't diving in completely blind, we will review some of the basics of how APIs work so that we can more easily understand the directions we see in our chosen API's documentation. 
 
+## Websites for machines
+If you compare human beings and computers, you will notice many differences. In fact, there is not much in common between what a human hopes to get from the world and what a computer hopes to get from a world. (Mostly because computers don't "hope".)
+
+When trying to understand the concept of Data APIs that run on the web, it can be tough to get a mental image of what's really happening. The explanation that has always helped me is to imagine building a website for machines. 
+
+When building a website for humans, we care about things like information architecture and clear presentation of content that utilizes visual design to reinforce hierarchy, relationships, and meaning. Machines (computers) also need a solid information architecture, but the way we present data for machines is very different from how we present data for users. 
+
+To give machines what they need, APIs respond with information that is structured so it can be interpreted by whatever software is making the request. Typically, this means JSON or XML formatting, which are discussed below. Both of these formats lack the visual component that is essential to delivering information for humans. Machines are terrible at interpreting graphic design, but they are very good at keeping track of intricate hierarchies as long as the structure is consistent and syntactically correct. 
+
+When we use APIs we are asking our software to do some web browsing for us, and the information it retrieves makes our own application much more valuable to the humans using it. 
+
 ## REST
 There are many kinds of APIs, but the dominant architecture on the web today is called "REST". You may see references to "RESTful APIs" or "REST-based APIs"&mdash;these are all ways of talking about an API that uses REST architecture.
 

@@ -1,5 +1,5 @@
 # Create the `forecast` data resource
-In order to use the 16-day Forecast API from OpenWeatherMap.org, we will once again create a new factory service using the Yeoman generator:
+In order to use the [16-day Forecast API](http://openweathermap.org/forecast16) from OpenWeatherMap.org, we will once again create a new factory service using the Yeoman generator:
 
 ```ssh
 yo angular:factory forecast
@@ -14,7 +14,7 @@ angular.module('yourApp')
     // ...
 
     // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/forecast/daily?id=:cityID&cnt=16&units=imperial&APPID=YOUR_APP_ID', {}, {
+    return $resource('http://api.openweathermap.org/data/2.5/forecast/daily?id=:cityID&cnt=16&units=imperial&APPID=YOUR_API_KEY', {}, {
       query: {
         method:'GET',
         params:{
@@ -25,3 +25,5 @@ angular.module('yourApp')
     });
   });
 ```
+
+As always, you will need to substitute in your own API key and the name of your AngularJS app, but otherwise you should have something similar in your own code. 

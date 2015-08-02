@@ -75,4 +75,4 @@ Since we already figured out where the data is located inside the object returne
 ![Current weather view](img/current_weather_view.png)
 
 ## Let's do that again!
-Now you can search for cities and then click in to view more weather details. Notice that at the bottom of the template code above there is a link to a whole new route: `/*/forecast/{{cityID}}`
+Now you can search for cities and then click in to view more weather details. Notice that at the bottom of the template code above there is a link to a whole new route: `/*/forecast/{{cityID}}`. We will retrace our steps to add this additional view in order to get more practice. Our approach will be identical to the approach we've taken to create this current weather view.

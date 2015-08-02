@@ -53,5 +53,22 @@ Using our updated data resource, we can easily get our current weather data. Now
 The view template created for us by Yeoman is the file `app/views/current.html`. Inside you will find some placeholder content. You can replace that with content that presents the current weather data to our users:
 
 ```html
+<h1>Current Weather for {{currentWeather.name}}</h1>
 
+<dl>
+    <dt>Currently</dt>
+    <dd>{{currentWeather.weather[0].main}}</dd>
+    <dd>{{currentWeather.weather[0].description}}</dd>
+    <dt>Temperature</dt>
+    <dd>{{currentWeather.main.temp}} &deg;F</dd>
+    <dt>Wind</dt>
+    <dd>{{currentWeather.wind.speed}} mph at {{currentWeather.wind.deg}} &deg;</dd>
+    <dt>Clouds</dt>
+    <dd>{{currentWeather.clouds.all}}%</dd>
+</dl>
+
+<p><a ng-href="/#/forecast/{{city.id}}" class="btn btn-lg btn-primary">View 16-day Forecast</a></p>
 ```
+
+Since we already figured out where the data is located inside the object returned by the OWM Current Weather API it was easy to place all of our information on the page. We can now click from the home screen to the current weather screen, and you should see something that looks like this in your browser:
+

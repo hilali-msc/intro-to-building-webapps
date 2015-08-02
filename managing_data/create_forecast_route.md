@@ -35,7 +35,7 @@ angular.module('yourApp')
   .controller('ForecastCtrl', function ($scope, $routeParams, forecast) {
     $scope.cityID = $routeParams.cityID;
 
-    $scope.forecast = forecast.query({
+    $scope.forecastData = forecast.query({
         cityID: $routeParams.cityID
     });
   });

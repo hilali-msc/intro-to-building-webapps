@@ -81,6 +81,11 @@ Finally, we output a button to click on to view the weather for a given city:
 <a ng-href="/#/current/{{city.id}}" class="btn btn-lg btn-primary">View Weather</a>
 ```
 
-This link makes use of the 
+This link makes use of the `ng-href` directive, which parses variables inside of the `ng-href` attribute. This allows us to create a link to view current weather info about a given city. In our case, we are building the URL with the `/current/` directory followed by the ID of the city: `{{city.id}}`. When our users click this link, we will be able to show them the current weather data for the city.
+
+## Try it out!
+Now that we have all the pieces in place, you should be able to test your creation in your browser. You should now be able to search for cities using whole names, or parts of names, and see all the cities you can find. OpenWeatherMap.org tracks weather for about 200 thousand cities, so there should be plenty to try out. Each city should come up with the name, country, and weather summary.
+
+Once you've marveled at your amazingly awesome new city search tool, we can move on to building the current weather view in its proper location.
 
 

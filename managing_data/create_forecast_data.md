@@ -26,4 +26,4 @@ angular.module('yourApp')
   });
 ```
 
-As always, you will need to substitute in your own API key and the name of your AngularJS app, but otherwise you should have something similar in your own code. 
+As always, you will need to substitute in your own API key and the name of your AngularJS app, but otherwise you should have something similar in your own code. Once you have the basics of working with a particular API settled, it should become trivial to create these resources.

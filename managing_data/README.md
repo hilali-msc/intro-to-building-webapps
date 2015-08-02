@@ -19,6 +19,11 @@ We can start to share our MVP and get feedback from users about what to improve 
 ## Covering ground
 In this chapter we are going to cover a good amount of ground. We will create a couple of new views, a few new model data resources, and we will rearrange where we put the current weather functionality we have already built. For the most part, we are repeating what we have done previously, and repetition is very valuable at this point. If you feel you need more repetition, you are encouraged to add an additional view using one of the many other endpoints available through OpenWeatherMap.org (historical data, weather station data, etc.).
 
-The one new thing we will bring into play is an AngularJS module, [ngStorage](http://ngmodules.org/modules/ngStorage). This module allows you to use a browser feature called "localStorage", which stores data in the user's web browser. This is a modern approach to storing information locally for users, and as a developer you can use it to enhance your site in many ways.
+## One more thing
+The one new thing we will bring into play is an AngularJS module, [ngStorage](http://ngmodules.org/modules/ngStorage). This module allows you to use a browser feature called `localStorage`, which stores data in the user's web browser. This is a modern approach to storing information locally for users, and as a developer you can use it to enhance your site in many ways.
 
-In the context of our weather app, we will use $localStorage to store the list of favorite cities so we can keep those handy for our users. By using the `ngStorage` module (which gives us an object called `$localStorage` that we can use in our Javascript code), we can easily keep our data synced and safe with fewer lines of code required. 
+In the context of our weather app, we will use the `$localStorage` object to store the list of favorite cities so we can keep those handy for our users. By using the `ngStorage` module, which gives us the `$localStorage` object, we can easily keep our data synced and safe with fewer lines of code required. 
+
+
+
+

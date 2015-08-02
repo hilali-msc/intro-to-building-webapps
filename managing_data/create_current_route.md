@@ -31,3 +31,27 @@ Here is how your route definition will look after you add that parameter:
 Now that we have the route defined and all our basic files in place, we can edit them to bring our current weather view to life. First, jump into `app/scripts/controllers/current.js` and begin editing your `CurrentCtrl` Controller.
 
 You will need to add `$scope` and `$routeParams` to your controller. We will use those to access and store info. You will also need to add `current` to your controller, so you can access the current weather data API from OpenWeatherMap.org.
+
+Once you have all those pieces available in your controller, you can easily write the code needed to set the `$scope.cityID` and make your data call:
+
+```js
+angular.module('yourApp')
+  .controller('CurrentCtrl', function ($scope, $routeParams, current) {
+    $scope.cityID = $routeParams.cityID;
+
+    $scope.currentWeather = current.query({
+        cityID: $routeParams.cityID
+    });
+  });
+```
+
+Notice that we are storing the `cityID` in a specific `$scope` variable, more to have it easily handy than anything else. The `$routeParams` object makes any route parameters available for your use. Since we called our parameter `cityID` in the route definition, we can access it with that same name as `$routeParams.cityID`.
+
+Using our updated data resource, we can easily get our current weather data. Now that we have that data streaming into the `$scope.currentWeather` variable, we can build our view template.
+
+## Set up the view template
+The view template created for us by Yeoman is the file `app/views/current.html`. Inside you will find some placeholder content. You can replace that with content that presents the current weather data to our users:
+
+```html
+
+```

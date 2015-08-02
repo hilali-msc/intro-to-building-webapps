@@ -5,7 +5,7 @@ Our current "home" screen is known within our app as `main`. It is the `app/view
 
 We will revise this output so that on the home screen the user is prompted to search for a city, and then they are shown a list of cities they have saved to their preferred locations list. It will end up looking like this:
 
-TODO: ADD SCREENSHOT OF UPDATED HOME SCREEN
+![Home screen after revisions](img/london_search.png)
 
 In order to do this, we will need to revise the home screen once again. We will alter the `MainCtrl` object so that it handles the city search. We will leverage a different OpenWeatherMap.org API endpoint called the "Find API". The Find API allows you to search for cities so you can, for example, show your user both Paris, France and Paris, Texas to allow them to specify which "Paris" they mean. City names are not unique in the world, so this sort of search functionality is crucial to making a useful weather app.
 

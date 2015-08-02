@@ -1,51 +1,20 @@
-# Find a City
-In order to get a weather report, users must be able to find a city. As we mentioned, it's important to provide users a way to search and specify the exact city they want. We don't want to confuse Paris, France with Paris, Texas. So when a user searches for "Paris", we will show them both as options.
+# Wiring Up `citysearch` on the Home Screen
+Now that we've got the `citysearch` resource defined, let's try it out. In order to do that, we will need to alter the `MainCtrl` Controller (in `main.js`) and the `main.html` template. We will set it up so that we use the existing text input and button on the home screen, but instead of immediately calling the `current` resource, we will show the list of cities we have found so the user may select one.
 
-Once the user specifies which "Paris" they want to see weather for, we will use the "ID" for that city to make all of our calls to the OpenWeatherMap.org API. The ID is unique for each city, so if we make a call for data related to a specific city ID, then we know that we will get the correct information.
-
-## Set up the `citysearch` model data resource
-In order to perform the city search call, we will need to create a `citysearch` resource that we can use. To do this, we will follow the same basic steps as we followed to create the `current` resource we used in the last chapter.
-
-First, run the Yeoman generator to generate the resource:
-
-```
-yo angular:factory citysearch
-```
-
-That command, as it did previously, will create a new file in `app/scripts/services/` called `citysearch.js`. Inside that file, you will find the stub of a resource. You will want to modify that stub to use the `$resource` object and add in the OpenWeatherMap.org API URL pattern. This will follow the same pattern as we used in the previous chapter. The proper URL to perform a city search using the OWM Find API should look like this:
-
-```html
-http://api.openweathermap.org/data/2.5/find?q=paris&type=like&mode=json&APPID=YOUR_APP_ID_HERE
-```
-
-Once we are done creating the resource definition, it should look like this:
+## Set up `MainCtrl` in `main.js`
+In order to search for cities on the home screen, we must use the `citysearch` resource in the `MainCtrl` Controller. We must also rework the way we assign variables and set up our refresh function. Here is what your `MainCtrl` object should look like after you finish your edits:
 
 ```js
 angular.module('yourApp')
-  .factory('citysearch', function ($resource) {
-    // Service logic
-    // ...
+  .controller('MainCtrl', function ($scope, citysearch) {
+    $scope.citiesFound = citysearch.find();
 
-    // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/find?q=:query&type=like&mode=json&APPID=YOUR_APP_ID', {}, {
-      find: {
-        method: 'GET',
-        params: {
-          query: 'seattle'
-        },
-        isArray: false
-      }
-    });
+    $scope.findCities = function(){
+        $scope.citiesFound = citysearch.find({
+            query: $scope.location
+        });
+        $scope.searchQuery = $scope.location;
+    };
   });
-```
-
-Looking at the code we've generated, you can see that we have mostly recreated the same setup as in the `current` resource (defined in `app/scripts/services/current.js`). You can identify that we have replaced the string `paris` in our example with the template placeholder `:query` and we supply a default value of `'seattle'` if no other value is specified. That means our app will, by default, return `citysearch` results for "seattle", but we can alter that whenever we make the search call. 
-
-Also note that we are defining a `find()` method here. So when we access this data, we will use code that looks like this:
-
-```js
-$scope.citiesFound = citysearch.find({
-    query: $scope.searchText
-});
 ```
 

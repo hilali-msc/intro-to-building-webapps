@@ -15,7 +15,7 @@ This command will create a controller called `CurrentCtrl` in `app/scripts/contr
 })
 ```
 
-We will need to alter this route in one small way to get things working. We will add a "router parameter" called `:cityID` to the path for this route. That router parameter is something we can pick up in our controller, so we can use that information to change the response this view delivers.
+We will need to alter this route in one small way to get things working. We will add a "route parameter" called `:cityID` to the path for this route. That route parameter is something we can pick up in our controller, so we can use that information to change the response this view delivers.
 
 Here is how your route definition will look after you add that parameter:
 
@@ -26,3 +26,8 @@ Here is how your route definition will look after you add that parameter:
     controllerAs: 'current'
 })
 ```
+
+## Set up the controller
+Now that we have the route defined and all our basic files in place, we can edit them to bring our current weather view to life. First, jump into `app/scripts/controllers/current.js` and begin editing your `CurrentCtrl` Controller.
+
+You will need to add `$scope` and `$routeParams` to your controller. We will use those to access and store info. You will also need to add `current` to your controller, so you can access the current weather data API from OpenWeatherMap.org.

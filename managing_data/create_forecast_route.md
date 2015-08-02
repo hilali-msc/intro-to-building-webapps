@@ -49,5 +49,15 @@ Now that we've got the data ready for our template, we can modify the HTML in ou
 Here is what the template should look like after you are done making edits:
 
 ```html
+<h1>16-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
+{{forecastData}}
+<dl ng-repeat="weather in forecastData.list">
+    <dt>Forecast</dt>
+    <dd>{{weather.weather[0].main}}</dd>
+    <dd>{{weather.weather[0].description}}</dd>
+    <dt>Temperature</dt>
+    <dd>Min: {{weather.temp.min}} &deg;F Max: {{weather.temp.max}}</dd>
+</dl>
 
+<p><a ng-href="/#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
 ```

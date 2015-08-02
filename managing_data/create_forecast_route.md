@@ -50,7 +50,6 @@ Here is what the template should look like after you are done making edits:
 
 ```html
 <h1>16-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
-{{forecastData}}
 <dl ng-repeat="weather in forecastData.list">
     <dt>Forecast</dt>
     <dd>{{weather.weather[0].main}}</dd>

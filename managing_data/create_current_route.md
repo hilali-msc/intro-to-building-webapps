@@ -67,8 +67,12 @@ The view template created for us by Yeoman is the file `app/views/current.html`.
     <dd>{{currentWeather.clouds.all}}%</dd>
 </dl>
 
-<p><a ng-href="/#/forecast/{{city.id}}" class="btn btn-lg btn-primary">View 16-day Forecast</a></p>
+<p><a ng-href="/#/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 16-day Forecast</a></p>
 ```
 
 Since we already figured out where the data is located inside the object returned by the OWM Current Weather API it was easy to place all of our information on the page. We can now click from the home screen to the current weather screen, and you should see something that looks like this in your browser:
 
+![Current weather view](img/current_weather_view.png)
+
+## Let's do that again!
+Now you can search for cities and then click in to view more weather details. Notice that at the bottom of the template code above there is a link to a whole new route: `/*/forecast/{{cityID}}`

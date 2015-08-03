@@ -51,7 +51,18 @@
     * [Get the Data to the View](data_api/get_data_to_view.md)
     * [Changes Recap](data_api/changes_recap.md)
     * [Conclusion](data_api/conclusion.md)
-* Managing and Using Data
+* [Managing and Using Data](managing_data/README.md)
+    * [Revising the Home Screen View](managing_data/revising_main.md)
+    * [Create City Search Data Resource](managing_data/create_city_search_data.md)
+    * [Add Enhanced City Search to Home Screen View](managing_data/create_city_search.md)
+    * [Create Current Weather Data Resource](managing_data/create_current_data.md)
+    * [Create Current Weather View](managing_data/create_current_route.md)
+    * [Create Forecast Data Resource](managing_data/create_forecast_data.md)
+    * [Create Forecast View](managing_data/create_forecast_route.md)
+    * [Save Cities for Users](managing_data/store_faves.md)
+    * [Show Saved Cities on Home Screen](managing_data/show_faves.md)
+    * [Conclusion](managing_data/conclusion.md)
+    * [File Changes](managing_data/file_changes.md)
 * Applying Animation and Interface Enhancements
 * Writing Tests
 * Things for the Future

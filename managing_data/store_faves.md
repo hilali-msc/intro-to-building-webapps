@@ -55,3 +55,12 @@ $scope.saveCity = function(city){
     }
 };
 ```
+
+You can add a button to the `app/views/current.html` template like this:
+
+```html
+<p><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>
+```
+
+Once you put all those pieces together, you should be able to save the city. Now, we haven't added any interface indication that the city is saved, so if you're looking to verify that our city was saved, you should inspect the page in developer tools and click to the Resources tab. You can then twirl down the "Local Storage" list and view local storage for the domain your site is running on. You should clearly see the entry made when you clicked the button:
+

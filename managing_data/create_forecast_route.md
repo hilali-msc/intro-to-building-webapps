@@ -50,15 +50,39 @@ Here is what the template should look like after you are done making edits:
 
 ```html
 <h1>16-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
-<dl ng-repeat="report in forecastData.list">
-    <dt>Forecast</dt>
-    <dd>{{report.weather[0].main}}</dd>
-    <dd>{{report.weather[0].description}}</dd>
+<dl ng-repeat="prediction in forecastData.list" class="weather-forecast">
+    <dt>Forecast for {{weather.dt*1000 | date:'MMM dd, yyyy'}}</dt>
+    <dd>{{prediction.weather[0].main}}</dd>
+    <dd>{{prediction.weather[0].description}}</dd>
     <dt>Temperature</dt>
-    <dd>Min: {{report.temp.min}} &deg;F Max: {{report.temp.max}} &deg;F</dd>
+    <dd>Min: {{prediction.temp.min}} &deg;F Max: {{prediction.temp.max}} &deg;F</dd>
 </dl>
 
 <p><a ng-href="/#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
 ```
 
-Notice that the 
+Notice that the [16-day Forecast API](http://openweathermap.org/forecast16) returns a slightly different data structure than the other API endpoints, so it is worthwhile to observe some of these responses and get an idea for how the data is arranged.
+
+Of special note in the forecast data results are the list of forecasts (for up to 16 days of weather predictions) and the use of `min` and `max` temperatures in the forecasts.
+
+In the example above, you can see that we are repeating a `<dl>` element for each day of weather predictions. Within each of those repeating `<dl>` elements, we are outputting some data. Most of this data is pretty standard, although the `weather.dt` value gets some special treatment using the AngularJS `date` filter.
+
+The `date` filter allows us to convert a timestamp into a human-readable date. The OpenWeatherMap.org API formats the date as a "Unix Timestamp" that is based in seconds. This number represents the number of seconds that have taken place since January 1, 1970 (also known as the "Unix Epoch"). This is a common way of recording time.
+
+The `date` filter is designed to take a timestamp and convert it to a human-readable format, but it is also designed to expect the timestamp to be in *milliseconds*, which is how timestamps are counted in Javascript. (And, yes, this is the number of milliseconds since January 1, 1970.)
+
+In order to make the `date` filter work, we must multiply our timestamp by 1000, hence the formatting you see above:
+
+`{{weather.dt*1000 | date: 'MMM dd, yyy'}}`
+
+That variable is filtered through the `date` filter and becomes:
+
+`Aug 03, 2015`
+
+(or something similar).
+
+Finally, notice that we kept a link at the bottom of this forecast view to return to the current weather view for our chosen city. (We can also click the "home" link in the top navigation to return home.)
+
+## Try it out
+Now that you have set up your template, you can test out your view and you should see results streaming in from the OpenWeatherMap.org API. Add a little CSS to your `app/styles/main.scss` file and you can easily come up with something like this:
+

@@ -50,13 +50,15 @@ Here is what the template should look like after you are done making edits:
 
 ```html
 <h1>16-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
-<dl ng-repeat="weather in forecastData.list">
+<dl ng-repeat="report in forecastData.list">
     <dt>Forecast</dt>
-    <dd>{{weather.weather[0].main}}</dd>
-    <dd>{{weather.weather[0].description}}</dd>
+    <dd>{{report.weather[0].main}}</dd>
+    <dd>{{report.weather[0].description}}</dd>
     <dt>Temperature</dt>
-    <dd>Min: {{weather.temp.min}} &deg;F Max: {{weather.temp.max}}</dd>
+    <dd>Min: {{report.temp.min}} &deg;F Max: {{report.temp.max}} &deg;F</dd>
 </dl>
 
 <p><a ng-href="/#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
 ```
+
+Notice that the 

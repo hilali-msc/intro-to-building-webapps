@@ -32,4 +32,26 @@ angular
 This addition makes the ngStorage Javscript module and it's components available in our application, but we must still let our controllers and other object know about the object before they use it.
 
 ## Modify the `CurrentCtrl` Controller
-The `CurrentCtrl` Controller is the controller in charge of rendering our current weather view in the `app/views/current.html` template. This controller will be used to "save" our city. In order to add a "save" button to the template, we need to make a function that will add the city to our 
+The `CurrentCtrl` Controller is the controller in charge of rendering our current weather view in the `app/views/current.html` template. This controller will be used to "save" our city. In order to add a "save" button to the template, we need to make a function that will add the city to our list of saved cities. And in order to make that happen, we need the `$localStorage` object to be available to the `CurrentCtrl` Controller.
+
+First, add the `$localStorage` dependency to your controller declaration:
+
+```js
+.controller('CurrentCtrl', function ($scope, $routeParams, current, $localStorage) {
+```
+
+Once you have that in place, you can use it in a function that can be applied to a save button via the `ng-click` directive. Here is what that function will look like:
+
+```js
+$scope.saveCity = function(city){
+    var cityData = {
+        'name': city.name,
+        'id': city.id
+    };
+    if (!$localStorage.savedCities){
+        $localStorage.savedCities = [cityData];
+    } else {
+        $localStorage.savedCities.push(cityData);
+    }
+};
+```

@@ -86,3 +86,4 @@ Finally, notice that we kept a link at the bottom of this forecast view to retur
 ## Try it out
 Now that you have set up your template, you can test out your view and you should see results streaming in from the OpenWeatherMap.org API. Add a little CSS to your `app/styles/main.scss` file and you can easily come up with something like this:
 
+

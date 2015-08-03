@@ -86,4 +86,6 @@ Finally, notice that we kept a link at the bottom of this forecast view to retur
 ## Try it out
 Now that you have set up your template, you can test out your view and you should see results streaming in from the OpenWeatherMap.org API. Add a little CSS to your `app/styles/main.scss` file and you can easily come up with something like this:
 
+![Forecast view](img/forecast_view.png)
 
+Huzzah! You almost have your whole basic feature set complete now. A user can find a city, view the current weather, and view a 16-day forecast. Those are the same basic features you'll find on most weather apps and websites. Congratulations! Now we can add the final touch: Allowing users to "save" their preferred cities.

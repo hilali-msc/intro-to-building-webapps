@@ -50,3 +50,6 @@ Notice that the `<li>` elements repeat for every `city in storage.savedCities`. 
 
 Once we have made those changes, view your app and click into the current weather for any city. On the current weather screen, click "Save City" and then return to the home screen. You should now see your saved city listed below the search box like this:
 
+![Saved cities listing on the home screen](img/saved_city_list.png)
+
+If you see something resembling the image above, then congratulations. You have now completed all of the basic features to make your weather app run.

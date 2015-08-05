@@ -15,3 +15,6 @@ Another weakness we have in our current interface has to do with clarity of what
 Sometimes sites rely purely on animation to indicate something worked, such as making a favorite star jiggle when you click it, but although animation is good for many things in an interface, it may be insufficient to communicate to the user "that action you just attempted was successful" (or not).
 
 For these sorts of transactions (and many others), we often use a concept of "messaging" in our apps. That is, we use a standard message format, design, and placement to convey updates from the system: "Successfully saved the city" or "Error retrieving data". Adding messaging like this will dramatically improve the usability of our application.
+
+## TODO
+In this chapter we will add animation to our views, so that when we move from the home screen to the current weather screen, and then from there to the forecast screen, and back, we will see elegant enter and leave animations. We will also add a message to our city save so that we indicate to the user that the city was successfully saved. In the case where the user has tried to save a city that was already saved, we will indicate that, too, so they know they have already saved the city.

@@ -1,4 +1,4 @@
 # Animation in AngularJS
 In recent versions of AngularJS, the way animating between views is handled has changed significantly. Since we are working with AngularJS above version 1.2, we will focus on the current approach to animating transitions.
 
-In general, when working with Javascript to create dynamic interfaces,
+In general, when working with Javascript to create dynamic interfaces, it's preferable to use CSS to make animations where possible. The features of CSS that support animation (transitions, keyframes, and animation sequence definitions) are robust and performant. Using Javascript to add/remove classes on HTML elements is a good way to trigger and control animations. By combining Javascript and CSS, you can have a great deal of control over animation.

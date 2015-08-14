@@ -31,3 +31,6 @@ In order to experiment with displaying messages using the `ngMessages` directive
 
 Here is what we hope to see after we successfully save a city:
 
+![Success message](img/success_message.png)
+
+In order to do that, we will make a couple of small tweaks to our `app/views/current.html` and `app/scripts/controllers/current.js` files.

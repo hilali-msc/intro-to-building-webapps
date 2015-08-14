@@ -9,14 +9,35 @@ todo
 
 ## `app/scripts/current.js`
 
-```html
+```js
 todo
 ```
 
 ## `app/styles/main.scss`
 
-```html
-todo
+```css
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import "variables"; // Override default Bootstrap values.
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "content";
+@import "buttons";
+@import "transitions";
+```
+## `app/styles/_transitions.scss`
+
+```css
+// Styles for animated transitions of HTML elements
+div[ng-view].ng-enter {
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+}
+div[ng-view].ng-leave {
+    -webkit-animation: fadeOut 0.5s;
+    animation: fadeOut 0.5s;
+}
 ```
 
 ## `app/index.html`

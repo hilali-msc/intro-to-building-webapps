@@ -63,7 +63,13 @@
     * [Show Saved Cities on Home Screen](managing_data/show_faves.md)
     * [Conclusion](managing_data/conclusion.md)
     * [File Changes](managing_data/file_changes.md)
-* Applying Animation and Interface Enhancements
+* [Applying Animation and Interface Enhancements](enhancements/README.md)
+    * [Animation Concepts](enhancements/animation_concepts.md)
+    * [Adding Animation to View Transitions](enhancements/add_animation_to_view.md)
+    * [Messaging Concepts](enhancements/README.md)
+    * [Adding Messages to City Save](enhancements/README.md)
+    * [Files Changed](enhancements/files_changed.md)
+    * [Conclusion](enhancements/README.md)
 * Writing Tests
 * Things for the Future
 * [Appendix](appendix/README.md)

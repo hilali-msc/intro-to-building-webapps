@@ -44,4 +44,13 @@ div[ng-view].ng-leave {
 }
 ````
 
-This is almost the same example from the previous page, and as we mentioned before, this style will make it so our content fades in
+This is almost the same example from the previous page, and as we mentioned before, this style will make it so our content fades in when the view changes. The additional `.ng-leave` style definition will cause our current view template to fade out before the other template fades in. (Note: This effect is not actually the best for users, but it demonstrates the way different styles are applied at different times.)
+
+## Expanding and extending
+It's worthwhile to go through your entire app and drop some transitional animations on any data changes that warrant the user's attention. This is likely to be all of them. Finding a balance of noticeable yet subtle enough to not be annoying is actually quite tricky, and it is worthwhile to do some trial and error experimentation.
+
+We could essentially define the same styles as above for the elements we use to contain our list of cities, because as the application loops through the cities returned by the OpenWeatherMap.org API, it applies the `.ng-enter` and `.ng-leave` classes accordingly.
+
+And now that we have a full animation library available to us, we could use that to create other animated styles, such as animated weather styles to indicate current conditions. The possibilities are limitless, and it is fun to try new things. 
+
+Of course, animations are only part of the enhancements we're after this week, so when you're finished experimenting with animations, let's move on to messaging.

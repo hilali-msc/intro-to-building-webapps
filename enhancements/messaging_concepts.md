@@ -18,4 +18,16 @@ Global messages apply to everything the user is seeing. On Twitter, for example,
 Global messages are great for letting us know that things are happening that generally apply to what we're doing. Depending on how they are presented, they can be more or less effective. For example, the alert pictured above is only visible when you scroll to the top of the page. If you are lower on the page you will never know how many tweets you have.
 
 ### Local messages
-Local messages appear closer to "where the action is". For example, when 
+Local messages appear closer to "where the action is". This is commonly seen in form field validation, especially when we're filling out more complex forms. In order to indicate where we have gone wrong, messages may be shown very close to the field (or in some way even styled as part of the form field).
+
+Here is an example from Twitter's signup form:
+
+![Twitter signup with error notifications](img/twitter_signup.png)
+
+As you can see in the image above, as you fill in the form the Twitter website is checking to see if your information is valid. It indicates to you clearly if you have successfully filled in the field or if you must change your information. Twitter even goes so far as to suggest alternate usernames based on the data you've filled in when your chosen name is unavailable.
+
+## Implementing messages in the weather app
+In order to experiment with displaying messages using the `ngMessages` directive in AngularJS, we will add a global message to the current weather screen. When users click the "save city" button, they will see a message that indicates to them whether or not the action has been successful. This should greatly enhance the user experience, eliminating the confusion over whether or not the city was actually saved.
+
+Here is what we hope to see after we successfully save a city:
+

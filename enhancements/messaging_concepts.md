@@ -1,0 +1,11 @@
+# Messaging Concepts
+In web applications, being able to let the user know about changes to the system they are using is a critical aspect of designing a responsive, friendly system. In order to communicate changes that may not be possible to represent more clearly to the user through any other means, we often use "messages". Sometimes these messages take on the guise of "alerts" or "notifications", and they are used in many ways.
+
+AngularJS allows us to use a built in messaging tool to easily define messages that can be used in a view and then to trigger them without having to write a bunch of duplicate code. This system is useful and pretty straightforward to make work. It is ideal for us because in our weather app we have a need to communicate when people successfully save a city. There is currently no indication that the app has actually saved the city when you click the "Save City" button. In order to discover that the city has actually been saved, users must click back to the home screen, which is inconvenient.
+
+We will implement messages to indicate that we have successfully saved the city, and to indicate when the user tries to save a duplicate city. (Of course, we could also remove the "Save City" button altogether in order to prevent duplicate saves, and that would be the better solution. But for the purposes of this exercise, we're going to leave the button there.)
+
+## The basics of messaging in websites and apps
+There are many ways to use messaging in websites and apps, and developers are always coming up with clever new ways to indicate changes in content and system status. But a few conventions have grown up around messaging, and for our purposes here we are not going to "reinvent" messages.
+
+When generally thinking about messaging, there are two major types of messages: global and local. Global messages apply to everything the user is seeing. On Twitter, for example, as you read tweets in your timeline you may notice an alert that shows up at the top of your timeline telling you that there are a number of new tweets available to read. In many email clients, when you receive a new message, or when you file a message away, you will see an alert at the top of the screen. 

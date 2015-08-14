@@ -58,3 +58,9 @@ Below is a chart of the classes that are applied during different AngularJS tran
 | show an element              | .ng-hide-remove | .ng-hide-remove-active | ngShow, ngHide |
 | adding a class to an element | .CLASS-add      | .CLASS-add-active      | ngClass and class="{{expression}}" |
 
+As you can see, these transition classes are applied every time an item is added or removed from the screen, and you can use these classes to hook onto many different events throughout the user's interaction with your application.
+
+It is useful to note that if you are using named keyframe animations, you only need to apply them on the "Starting CSS Class" -- the "Ending CSS Class" does not need to be defined.
+
+## Getting into it
+Of course, the best way to learn about this is to get in and attempt to animate your views. On the next page we will add `animate.css` to our project and use it to apply a general animation to our view changes.

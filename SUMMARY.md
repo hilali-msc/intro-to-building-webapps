@@ -65,7 +65,7 @@
     * [File Changes](managing_data/file_changes.md)
 * [Applying Animation and Interface Enhancements](enhancements/README.md)
     * [Animation Concepts](enhancements/animation_concepts.md)
-    * [Adding Animation to View Transitions](enhancements/add_animation_to_view.md)
+    * [Adding Animation to View Transitions](enhancements/add_animation_to_views.md)
     * [Messaging Concepts](enhancements/README.md)
     * [Adding Messages to City Save](enhancements/README.md)
     * [Files Changed](enhancements/files_changed.md)

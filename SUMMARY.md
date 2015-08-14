@@ -66,10 +66,10 @@
 * [Applying Animation and Interface Enhancements](enhancements/README.md)
     * [Animation Concepts](enhancements/animation_concepts.md)
     * [Adding Animation to View Transitions](enhancements/add_animation_to_views.md)
-    * [Messaging Concepts](enhancements/README.md)
-    * [Adding Messages to City Save](enhancements/README.md)
+    * [Messaging Concepts](enhancements/messaging_concepts.md)
+    * [Adding Messages to City Save](enhancements/add_messaging_save.md)
     * [Files Changed](enhancements/files_changed.md)
-    * [Conclusion](enhancements/README.md)
+    * [Conclusion](enhancements/conclusion.md)
 * Writing Tests
 * Things for the Future
 * [Appendix](appendix/README.md)

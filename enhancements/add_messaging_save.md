@@ -74,4 +74,7 @@ Similarly, the second message is controlled by the value of `$scope.citySaved.du
 Notice that the functionality of messages doesn't care about what classes, content, or HTML structures you have in your messages. Although the messages must be contained within an element that has the `ng-messages` attribute, you are otherwise free to create whatever HTML structure and assign whatever styles you wish. In this example, we are using default Bootstrap CSS styles to give the messages a "success" and "warning" look.
 
 ## Try it out
+
+![Success!](img/success_message.png)
+
 If you've successfully implemented these changes to the respective files, you should be able to test it out. Click into the current weather for a city and click the "save city" button. You should see one of these messages appear. Search, view and save a few cities to get an idea of how much this improves your app. Contemplate all the different things you could do with styling to improve the look and feel of these messages. Once again, there are many possibilities to explore here. Have fun and experiment.

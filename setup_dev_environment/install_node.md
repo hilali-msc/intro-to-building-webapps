@@ -14,7 +14,7 @@ Windows users may consider also installing the useful [CMDR](http://gooseberrycr
 Since we will spend a lot of time on the command line during this project, it will be nice to have a better terminal experience.
 
 ## Mac Considerations
-Mac users should consider using [Homebrew](http://homebrew.sh) to manage packages like Node.js (and many other development tools). Homebrew is a popular package management tool for Mac and it makes installing many packages much easier. The Homebrew website (http://homebrew.sh) has a great installation tutorial to follow. Once you've installed Homebrew on your system, you can install Node.js with one command:
+Mac users should consider using [Homebrew](http://brew.sh) to manage packages like Node.js (and many other development tools). Homebrew is a popular package management tool for Mac and it makes installing many packages much easier. The Homebrew website (http://brew.sh) has a great installation tutorial to follow. Once you've installed Homebrew on your system, you can install Node.js with one command:
 
 ```
 brew install node

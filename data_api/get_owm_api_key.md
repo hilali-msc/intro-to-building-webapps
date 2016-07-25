@@ -33,6 +33,10 @@ You will want to review those pages. Try using Postman to explore the current we
 http://api.openweathermap.org/data/2.5/weather?q=Seattle,us&units=imperial
 ```
 
+(Don't forget that you'll need to set your API key using a query string parameter. Other API services will require you to configure Postman to authenticate in other ways, so pay attention to those requirements if you're using a different API.)
+
+![Postman with API key configured.](img/Postman.png)
+
 Try changing the units to "metric" or alter the location to see results for a different city. You should be able to see clear changes in the data returned. Can you make the API send results for Paris, France? How about Paris, Texas? Keep exploring until you feel like you have a basic understanding of how this API works.
 
 ## Using other APIs

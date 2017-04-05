@@ -16,7 +16,7 @@ This project will advance your Javascript skills and expose you to another way o
 
 ## Basic command line
 
-You should not be afraid of the Terminal app \(although if you prefer to use [iTerm2](https://www.iterm2.com/) you would not be alone\). You probably already have [CMDER](http://cmder.net/) installed on your Windows machine to ease the pain of using the Windows command line \(and if you don't, then you might want to install that\). You may have already tried working with Linux or Unix and seen what the command line looks like.
+You should not be afraid of the Terminal app \(although if you prefer to use [iTerm2](https://www.iterm2.com/) you would not be alone\). You will want to use a \*nix console emulator like [CMDER](http://cmder.net/)  or the new ["Bash on Ubuntu on Windows"](https://msdn.microsoft.com/en-us/commandline/wsl/about) feature of Windows 10 if you are using a Windows PC. \(NOTE: You can do much of this in Powershell, too, but those techniques diverge significantly from the ones described in this book.\)  You may have already tried working with Linux or Unix and seen what the command line looks like.
 
 Modern web developers use the command line all the time because it allows us to easily manage the many components of our projects, and it mimics the environment our projects run in on a public server. Many developers love the command line and the speed and ease of use. Throughout this project we will regularly use the command line to manage our development tools.
 

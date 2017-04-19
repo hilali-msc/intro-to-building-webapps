@@ -14,9 +14,9 @@ Linux \(or Unix\) users may use whatever package manager they prefer to install 
 
 ## Windows Considerations
 
-Windows users may consider also installing the useful [CMDER](http://gooseberrycreative.com/cmder/) tool, which adds a lot of functionality to the default Windows command line terminal. This includes basic Unix commands that are missing by default from Windows as well as nicer coloring and prompts so you can have a more effective interface.
+Windows users may consider also installing the useful [CMDER](http://cmder.net/) tool, which adds a lot of functionality to the default Windows command line terminal. This includes basic Unix commands that are missing by default from Windows as well as nicer coloring and prompts so you can have a more effective interface.
 
-Since we will spend a lot of time on the command line during this project, it will be nice to have a better terminal experience.
+Since we will spend a lot of time on the command line during this project, it will be nice to have a better terminal experience. If you are using CMDER, you will probably want to [read this article](https://www.awmoore.com/2015/01/14/setting-up-git-and-cmder/) to complete your setup.
 
 ## Mac Considerations
 
